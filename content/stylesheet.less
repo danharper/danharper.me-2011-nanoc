@@ -29,32 +29,50 @@
 	        border-bottom-right-radius: @radius;
 }
 
+ @body_colour: #363636;
  @link_colour: #237ccf;
 @hover_colour: #ff5e99;
 
 @backup_fonts: Helvetica, Arial, sans-serif;
 @header_fonts: "Yanone Kaffeesatz", @backup_fonts;
    @nav_fonts: "League Gothic", Impact, @backup_fonts;
-  @body_fonts: "Droid Serif", Georgia, serif;
+//  @body_fonts: "Droid Serif", Georgia, serif;
+  @body_fonts: Helvetica, Arial, sans-serif;
 
 html {
 	background: url(images/bg.png) no-repeat top center fixed;
 }
 
+body, select, input, textarea {
+	color: @body_colour;
+	font-family: @body_fonts;
+	font-size: 16px;
+}
+
+p, li, input, textarea {
+	line-height: 1.5em;
+}
+
 h1, h2, h3 {
-	color: #363636;
+	color: @body_colour;
 	font-family: @header_fonts;
 }
 
 h1 {
 	font-size: 38px;
-	margin: 0 auto 50px;
-	text-align: center;
-	width: 460px;
+	margin-bottom: 20px;
 }
 
 h2 {
-	font-size: 38px;
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+p {
+	margin-bottom: 25px;
 }
 
 a:link, a:visited {
@@ -113,6 +131,12 @@ header {
 	.rounded_corners;
 	background: url(images/wrapbg.png) repeat-x #fff;
 	padding: 50px 40px;
+}
+
+h1#bigfeature {
+	margin: 0 auto 50px;
+	text-align: center;
+	width: 460px;
 }
 
 #portfolio-preview {
@@ -184,42 +208,53 @@ header {
 
 #portfolio article {
 	margin-bottom: 40px;
-	h2 {
-		margin-bottom: 15px;
-	}
 	img {
 		.rounded_corners;
 		margin-left: -90px;
 	}
 }
 
-h2.client {
+h1.client {
 	background: url(images/star.png) no-repeat center left;
-	margin-left: -57px;
 	padding-left: 52px;
+	margin-left: -62px !important;
 }
 
-h2.themeforest {
+h1.themeforest {
 	background: url(images/themeforest.png) no-repeat bottom left;
-	margin-left: -60px;
-	padding-left: 55px;
+	padding-left: 56px;
+	margin-left: -66px !important;
 }
 
-h2.codecanyon {
+h1.codecanyon {
 	background: url(images/codecanyon.png) no-repeat bottom left;
-	margin-left: -60px;
-	padding-left: 55px;
+	padding-left: 54px;
+	margin-left: -64px !important;
 }
 
-h2.graphicriver {
-	background: url(images/graphicriver.png) no-repeat top left;
-	margin-left: -60px;
-	padding-bottom: 7px;
-	padding-left: 55px;
+h1.tutsplus {
+	background: url(images/tutsplus.png) no-repeat center left;
+	padding-left: 80px;
+	margin-left: -90px !important;
 }
 
-h2.tutsplus {
-	background: url(images/tutsplus.png) no-repeat bottom left;
-	margin-left: -90px;
-	padding-left: 75px;
+#blog h1,
+#blog h2 {
+	margin-left: -10px;
+}
+
+article h1 a:link,
+article h1 a:visited {
+	color: @body_colour;
+}
+
+.postimg {
+	margin: 0;
+	img {
+		float: right;
+		margin-top: -20px;
+		margin-right: -22px;
+		margin-left: 5px;
+		margin-bottom: 10px;
+	}
 }

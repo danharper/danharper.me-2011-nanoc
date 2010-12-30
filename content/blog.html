@@ -1,0 +1,17 @@
+--- 
+title: The Blog
+---
+<section id="blog">
+	<% sorted_articles.each do |i| %>
+		<% cl = ' class="' + i[:external] + '"' if i[:external] %>
+		<article>
+			<h1<%= cl %>><%= link_to i[:title], i %></h1>
+			<% if i[:postimg] %>
+				<p class="postimg">
+					<img src="/postimg/<%= i[:postimg] %>" />
+				</p>
+			<% end %>
+			<%= i[:excerpt] %>
+		</article>
+	<% end %>
+</section>
