@@ -17,6 +17,7 @@ compile '/reset/' do; end
 
 compile '/stylesheet/' do
 	filter :less
+	filter :rainpress
 end
 
 compile '*' do
