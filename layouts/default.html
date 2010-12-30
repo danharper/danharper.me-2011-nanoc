@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= title 'Dan Harper', @item[:title], 'Web Developer' %></title>
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold">
+  </head>
+  <body>
+    <div id="container">
+			<header class="clearfix">
+				<h1><a href="/" class="ir">Dan Harper</a></h1>
+				<nav>
+					<ul>
+						<%= nav_link 'Work', '/work/', @item %>
+						<%= nav_link 'Blog', '/blog/', @item %>
+						<%= nav_link 'Contact', '/contact/', @item %>
+					</ul>
+				</nav>
+			</header>
+	
+      <div id="main">
+      	<%= yield %>
+      </div>
+
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<script>
+		var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+		(function(d, t) {
+		 var g = d.createElement(t),
+		     s = d.getElementsByTagName(t)[0];
+		 g.async = true;
+		 g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		 s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+	</script>
+  </body>
+</html>

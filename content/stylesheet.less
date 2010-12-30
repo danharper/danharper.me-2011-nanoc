@@ -1,0 +1,223 @@
+@font-face {
+	font-family: "League Gothic";
+	src: url(fonts/League Gothic.otf);
+}
+
+.rounded_corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	        border-radius: @radius;
+}
+
+.rounded_corners_left (@radius: 5px) {
+	   -webkit-border-top-left-radius: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	       -moz-border-radius-topleft: @radius;
+	    -moz-border-radius-bottomleft: @radius;
+	           border-top-left-radius: @radius;
+	        border-bottom-left-radius: @radius;
+}
+
+.rounded_corners_right (@radius: 5px) {
+	   -webkit-border-top-right-radius: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	       -moz-border-radius-topright: @radius;
+	    -moz-border-radius-bottomright: @radius;
+	           border-top-right-radius: @radius;
+	        border-bottom-right-radius: @radius;
+}
+
+ @link_colour: #237ccf;
+@hover_colour: #ff5e99;
+
+@backup_fonts: Helvetica, Arial, sans-serif;
+@header_fonts: "Yanone Kaffeesatz", @backup_fonts;
+   @nav_fonts: "League Gothic", Impact, @backup_fonts;
+  @body_fonts: "Droid Serif", Georgia, serif;
+
+html {
+	background: url(images/bg.png) no-repeat top center fixed;
+}
+
+h1, h2, h3 {
+	color: #363636;
+	font-family: @header_fonts;
+}
+
+h1 {
+	font-size: 38px;
+	margin: 0 auto 50px;
+	text-align: center;
+	width: 460px;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+a:link, a:visited {
+	color: @link_colour;
+	text-decoration: none;
+	:hover {
+		color: @hover_colour;
+	}
+}
+
+#container {
+	margin: 0 auto;
+	width: 580px;
+}
+
+header {
+	margin: 35px auto;
+	width: 500px;
+	h1 {
+		background-image: url(images/logo.png);
+		float: left;
+		height: 48px;
+		margin: 0;
+		width: 68px;
+	}
+	
+	nav {
+		float: right;
+		margin-top: 10px;
+		li {
+			display: inline;
+			margin-right: 15px;
+			:last-child {
+				margin-right: 0;
+			}
+		}
+		a:link, a:visited {
+			color: #fff;
+			font-family: @nav_fonts;
+			font-size: 25px;
+			text-decoration: none;
+			text-transform: uppercase;
+			:hover {
+				border-bottom: 2px solid;
+				color: #fff;
+			}
+		}
+		.current a {
+			border-bottom: 2px solid;
+			color: #d2d2d2;
+		}
+	}
+}
+
+#main {
+	.rounded_corners;
+	background: url(images/wrapbg.png) repeat-x #fff;
+	padding: 50px 40px;
+}
+
+#portfolio-preview {
+	margin-bottom: 50px;
+	img {
+	}
+	p:first-child {
+		position: relative;
+		a {
+			float: left;
+			:first-child {
+				img {
+					.rounded_corners_left;
+				}
+				margin-left: -90px;
+			}
+			:last-child {
+				img {
+					.rounded_corners_right;
+				}
+				position: absolute;
+				right: -90px;
+			}
+		}
+	}
+	p:last-child {
+		clear: both;
+		padding-top: 10px;
+	}
+}
+
+.stylish a {
+	border: 2px solid white;
+	clear: both;
+	color: #363636;
+	background: url(images/goto.png) no-repeat center right;
+	float: right;
+	font-family: @header_fonts;
+	font-size: 21px;
+	font-weight: bold;
+	padding-right: 25px;
+	text-transform: lowercase;
+	zoom: 1;
+	:hover {
+		border-bottom: 2px solid;
+		color: #363636;
+	}
+}
+
+.message a:link, .message a:visited {
+	.rounded_corners;
+	background: @link_colour;
+	color: #fff;
+	display: block;
+	font-family: @header_fonts;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0 -90px 40px;
+	padding: 15px 0;
+	text-align: center;
+	span {
+		background: url(images/opensource.png) no-repeat center left;
+		padding-left: 50px;
+	}
+	:hover {
+		background: @hover_colour;
+	}
+}
+
+#portfolio article {
+	margin-bottom: 40px;
+	h2 {
+		margin-bottom: 15px;
+	}
+	img {
+		.rounded_corners;
+		margin-left: -90px;
+	}
+}
+
+h2.client {
+	background: url(images/star.png) no-repeat center left;
+	margin-left: -57px;
+	padding-left: 52px;
+}
+
+h2.themeforest {
+	background: url(images/themeforest.png) no-repeat bottom left;
+	margin-left: -60px;
+	padding-left: 55px;
+}
+
+h2.codecanyon {
+	background: url(images/codecanyon.png) no-repeat bottom left;
+	margin-left: -60px;
+	padding-left: 55px;
+}
+
+h2.graphicriver {
+	background: url(images/graphicriver.png) no-repeat top left;
+	margin-left: -60px;
+	padding-bottom: 7px;
+	padding-left: 55px;
+}
+
+h2.tutsplus {
+	background: url(images/tutsplus.png) no-repeat bottom left;
+	margin-left: -90px;
+	padding-left: 75px;
+}
