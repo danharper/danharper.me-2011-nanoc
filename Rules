@@ -10,17 +10,40 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/portfolio/*/' do; end
-compile '/postimg/*/' do; end
-compile '/images/*/' do; end
-compile '/fonts/*/' do; end
-compile '/favicon/' do; end
-compile '/reset/' do; end
-
-compile '/stylesheet/' do
+compile '/assets/css/style/' do
 	filter :less
 	filter :rainpress
 end
+
+route '/assets/css/style/' do
+  '/style.css'
+end
+
+route '/assets/css/reset/' do
+	nil
+end
+
+
+route '/assets/favicon/' do
+	'/favicon.ico'
+end
+
+
+compile '/assets/*/' do
+end
+
+route '/assets/*/' do
+	item.identifier.chop + '.' + item[:extension]
+end
+
+
+
+compile '/work/*/' do
+	filter :erb
+	filter :redcloth
+	layout 'default'
+end
+
 
 compile '/blog/*/' do
 	filter :erb
@@ -28,42 +51,15 @@ compile '/blog/*/' do
 	layout 'default'
 end
 
+
 compile '*' do
   filter :erb
   layout 'default'
 end
 
-
-route '/portfolio/*/' do
-	item.identifier.chop + '.' + item[:extension]
-end
-
-route '/postimg/*/' do
-	item.identifier.chop + '.' + item[:extension]
-end
-
-route '/images/*/' do
-	item.identifier.chop + '.' + item[:extension]
-end
-
-route '/fonts/*/' do
-	item.identifier.chop + '.' + item[:extension]
-end
-
-route '/favicon/' do
-	'/favicon.ico'
-end
-
-route '/reset/' do
-	'/reset.css'
-end
-
-route '/stylesheet/' do
-  '/style.css'
-end
-
 route '*' do
   item.identifier + 'index.html'
 end
+
 
 layout '*', :erb

@@ -11,7 +11,7 @@ title: A New Item
 	<% sorted_portfolio_items.each do |i| %>
 		<article>
 			<a href="<%= relative_path_to i %>">
-				<img src="/portfolio/<%= i[:images] %>/<%= i[:large] %>" />
+				<img src="/assets/portfolio/<%= i[:images] %>/<%= i[:large] %>" />
 			</a>
 		</article>
 	<% end %>
