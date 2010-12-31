@@ -136,7 +136,25 @@ header {
 #main {
 	.rounded_corners;
 	background: url(assets/images/wrapbg.png) repeat-x #fff;
-	padding: 50px 40px;
+	padding: 50px 40px 0;
+	footer {
+		background: url(assets/images/infinity.png) no-repeat bottom right #fff;
+		-webkit-border-bottom-right-radius: 5px;
+		min-height: 186px;
+		margin: 20px -40px 0 0;
+		section {
+			color: #ddd;
+			font-size: 13px;
+			padding-top: 100px;
+			width: 300px;
+			a:link, a:visited {
+				color: #ddd;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
 h1#bigfeature {
@@ -219,8 +237,19 @@ h1#bigfeature {
 	}
 	img {
 		.rounded_corners;
-		margin-left: -90px;
+		margin-left: -88px;
 	}
+}
+
+img.full_site_ss {
+	.rounded_corners;
+	margin-left: -88px;
+}
+
+img.off_right70 {
+	.rounded_corners;
+	float: right;
+	margin: 0 -110px 15px 10px;
 }
 
 h1.client {
@@ -303,6 +332,7 @@ blockquote {
 	.rounded_corners(10px);
 	background: url(assets/images/quote.png) no-repeat top left;
 	border: 1px solid #ddd;
+	display: block;
 	margin-bottom: 20px;
 	margin-left: -10px;
 	padding: 10px 10px 15px 50px;
@@ -356,3 +386,34 @@ pre {
 .CodeRay .sy { color:#6C9CBD }                      /* symbol */  
 .CodeRay .ta { color:#E7BE69 }                      /* html tag */  
 .CodeRay .pc { color:#6C9CBD }                      /* boolean */
+
+#disqus_thread {
+	padding-top: 25px;
+	
+	#dsq-global-toolbar,
+	#dsq-pagination,
+	.dsq-options {
+		display: none;
+	}
+	
+	h3 {
+		margin-bottom: 15px;
+		margin-left: -10px;
+	}
+	
+	.dsq-append-post h3 {
+		margin-bottom: 10px;
+		margin-left: 0;
+	}
+}
+
+p.meta {
+	background: #eee;
+	color: #666;
+	font-size: @body_font_size - 3;
+	font-style: italic;
+	margin-left: -40px;
+	margin-right: -40px;
+	padding: 10px 40px;
+	text-align: right;
+}

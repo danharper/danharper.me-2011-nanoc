@@ -10,6 +10,12 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+compile '/dribbble/' do
+	filter :redcloth
+	layout 'blog-post'
+	layout 'default'
+end
+
 compile '/assets/css/style/' do
 	filter :less
 	filter :rainpress
@@ -51,6 +57,7 @@ compile '/blog/*/' do
 	filter :colorize_syntax,
 				 :default_colorizer => :coderay
 	layout 'blog-post'
+	layout 'disqus'
 	layout 'default'
 end
 

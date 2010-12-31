@@ -19,15 +19,24 @@
 				<h1><a href="/" class="ir">Dan Harper</a></h1>
 				<nav>
 					<ul>
+						<%= nav_link 'Home', '/', @item %>
 						<%= nav_link 'Work', '/work/', @item %>
 						<%= nav_link 'Blog', '/blog/', @item %>
-						<%= nav_link 'Contact', '/contact/', @item %>
 					</ul>
 				</nav>
 			</header>
 	
       <div id="main">
       	<%= yield %>
+				
+				<footer>
+					<section>
+						<p>
+							Find me on <a href="http://github.com/danharper">GitHub</a>, <a href="http://twitter.com/danharper7">Twitter</a>, <a href="/dribbble/">Dribbble</a> or <a href="http://uk.linkedin.com/in/danharper7">LinkedIn</a>.<br />
+							Copyright &copy; 2011 Dan Harper.
+						</p>
+					</section>
+				</footer>
       </div>
 
     </div>
