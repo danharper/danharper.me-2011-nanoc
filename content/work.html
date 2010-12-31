@@ -7,43 +7,12 @@ title: A New Item
 </p>
 
 <section id="portfolio">
-	<article>
-		<h1 class="client">JobsAbroad.ie &amp; SummerJobs.ie</h1>
-		<a href="#">
-			<img src="/images/portfolio/jobsabroad/main.jpg" alt="JobsAbroad preview" />
-		</a>
-		<p class="stylish">
-			<a href="#">More Details</a>
-		</p>
-	</article>
 	
-	<article>
-		<h1 class="themeforest">gp3</h1>
-		<a href="#">
-			<img src="/images/portfolio/gp3/main.jpg" alt="GamePress 3 preview" />
-		</a>
-		<p class="stylish">
-			<a href="#">More Details</a>
-		</p>
-	</article>
-	
-	<article>
-		<h1 class="themeforest">Magazine o'Tuts</h1>
-		<a href="#">
-			<img src="/images/portfolio/gp3/main.jpg" alt="GamePress 3 preview" />
-		</a>
-		<p class="stylish">
-			<a href="#">More Details</a>
-		</p>
-	</article>
-	
-	<article>
-		<h1 class="codecanyon">The Jobs Board</h1>
-		<a href="#">
-			<img src="/images/portfolio/jobsabroad/main.jpg" alt="GamePress 3 preview" />
-		</a>
-		<p class="stylish">
-			<a href="#">More Details</a>
-		</p>
-	</article>
+	<% sorted_portfolio_items.each do |i| %>
+		<article>
+			<a href="<%= relative_path_to i %>">
+				<img src="/portfolio/<%= i[:images] %>/<%= i[:large] %>" />
+			</a>
+		</article>
+	<% end %>
 </section>

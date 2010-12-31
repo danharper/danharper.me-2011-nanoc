@@ -10,6 +10,7 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+compile '/portfolio/*/' do; end
 compile '/postimg/*/' do; end
 compile '/images/*/' do; end
 compile '/fonts/*/' do; end
@@ -32,6 +33,10 @@ compile '*' do
   layout 'default'
 end
 
+
+route '/portfolio/*/' do
+	item.identifier.chop + '.' + item[:extension]
+end
 
 route '/postimg/*/' do
 	item.identifier.chop + '.' + item[:extension]
