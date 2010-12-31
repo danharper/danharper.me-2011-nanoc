@@ -10,6 +10,4 @@ kind: portfolio
 published: true
 ---
 
-h2. Oh, hi there!
-
-loool, *here's* some _wonkey text_ haha!
+wip

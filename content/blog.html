@@ -25,7 +25,11 @@ title: The Blog
 						<img src="/assets/postimg/<%= i[:postimg] %>" />
 					</p>
 				<% end %>
-				<div><%= i[:excerpt] %></div>
+				<% if i[:excerpt] %>
+					<div><%= i[:excerpt] %></div>
+				<% else %>
+					<div><%= i.compiled_content %></div>
+				<% end %>
 				<p class="stylish clearfix">
 					<%= link_to "Continue Reading", i %>
 				</p>

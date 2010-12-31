@@ -47,6 +47,7 @@ end
 compile '/work/*/' do
 	filter :erb
 	filter :redcloth
+	layout 'portfolio-item'
 	layout 'default'
 end
 

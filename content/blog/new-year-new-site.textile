@@ -1,0 +1,11 @@
+--- 
+title: A New Year, A New Site
+//postimg: process-of-site-design.png
+created_at: 2010-12-31
+updated_at: 2010-12-31
+kind: article
+published: true
+disqus: disable
+---
+
+18 months. That's how long it's been since I last had what I think of as a "proper site" (ie. not just a landing page with links to my profiles elsewhere on the web). It's just hard, you know; hard to create something for yourself and be 100% pleased with it.

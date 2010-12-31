@@ -8,7 +8,7 @@
 		<% end %>
 		<%= yield %>
 <!--		<p class="meta">
-			posted <%= @item[:created_at].strftime('%B %d, %Y') %>.
+			posted <%= @item[:created_at].strftime('%B %d, %Y') if @item[:created_at] %>.
 		</p>-->
 	</article>
 </section>

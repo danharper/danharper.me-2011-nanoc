@@ -1,0 +1,12 @@
+<section id="portfolio">
+	<article>
+		<% ext = (@item[:ext]) ? @item[:ext] : "client" %>
+		<% ext = " class=\"#{ext}\"" %>
+		<h1<%= ext %>><%= @item[:title] %></h1>
+		<p><a href="<%= @item[:url] %>"><img src="/assets/portfolio/<%= @item[:images] %>/<%= @item[:large] %>" alt="<%= @item[:title] %> preview" /></a></p>
+		
+		<p><strong>Note:</strong> I'm currently still working on the portfolio section of my website and will have more details about each item shortly, including a look at the design process for some of the more recent items.</p>
+		
+		<%= yield %>
+	</article>
+</section>

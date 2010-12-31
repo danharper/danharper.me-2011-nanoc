@@ -1,8 +1,8 @@
 --- 
 title: JobsAbroad.ie & SummerJobs.ie
-ext: themeforest
+ext: client
 url: http://www.jobsabroad.ie
-images: jobsabroad
+images: jobs-abroad
 large: main.jpg
 thumb: thumb.jpg
 created_at: 2010-08-14
@@ -11,4 +11,6 @@ kind: portfolio
 published: true
 ---
 
-This is some *text*! :)
+wip
+
+!(full_site_ss)/assets/portfolio/jobs-abroad/summerjobs.jpg!
