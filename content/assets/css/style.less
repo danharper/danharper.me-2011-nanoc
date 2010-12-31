@@ -29,6 +29,8 @@
 	        border-bottom-right-radius: @radius;
 }
 
+@body_font_size: 16px;
+
  @body_colour: #363636;
  @link_colour: #237ccf;
 @hover_colour: #ff5e99;
@@ -36,8 +38,8 @@
 @backup_fonts: Helvetica, Arial, sans-serif;
 @header_fonts: "Yanone Kaffeesatz", @backup_fonts;
    @nav_fonts: "League Gothic", Impact, @backup_fonts;
-//  @body_fonts: "Droid Serif", Georgia, serif;
   @body_fonts: Helvetica, Arial, sans-serif;
+  @code_fonts: "Monaco", "Bitstream Vera Sans Mono", "Courier New", monospace;
 
 html {
 	background: url(assets/images/bg.png) no-repeat top center fixed;
@@ -46,7 +48,7 @@ html {
 body, select, input, textarea {
 	color: @body_colour;
 	font-family: @body_fonts;
-	font-size: 16px;
+	font-size: @body_font_size;
 }
 
 p, li, input, textarea {
@@ -72,7 +74,11 @@ h3 {
 }
 
 p {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
+}
+
+ul, ol {
+	margin-bottom: 20px;
 }
 
 a:link, a:visited {
@@ -272,3 +278,81 @@ article h1 a:visited {
 		margin-bottom: 10px;
 	}
 }
+
+ol.fancy {
+	color: #fff;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: @body_font_size - 4;
+	list-style-position: inside;
+	margin-left: 10px;
+	li {
+		background: url(assets/images/list-circle.png) no-repeat center left;
+		line-height: 26px;
+		margin-bottom: 5px;
+		padding-left: 7px;
+	}
+	span {
+		color: @body_colour;
+		font-family: @body_fonts;
+		font-size: @body_font_size;
+		padding-left: 10px;
+	}
+}
+
+blockquote {
+	.rounded_corners(10px);
+	background: url(assets/images/quote.png) no-repeat top left;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	margin-left: -10px;
+	padding: 10px 10px 15px 50px;
+	p {
+		margin-bottom: 10px;
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+code {
+	.rounded_corners(3px);
+	background-color: #eee;
+	color: #444;
+	font-family: @code_fonts;
+	font-size: @body_font_size - 2;
+	padding: 0 4px;
+}
+
+pre {
+	background-color: #232323;
+	color: #E6E0DB;
+	margin: 0 -40px 20px;
+	padding: 10px 40px;
+	code {
+		.rounded_corners(0);
+		background: inherit;
+		color: inherit;
+		display: block;
+		line-height: 1.4em;
+		padding: 0;
+	}
+}
+   
+.CodeRay .an { color:#E7BE69 }                      /* html attribute */  
+.CodeRay .c  { color:#BC9358; font-style: italic; } /* comment */  
+.CodeRay .ch { color:#509E4F }                      /* escaped character */  
+.CodeRay .cl { color:#FFF }                         /* class */  
+.CodeRay .co { color:#FFF }                         /* constant */  
+.CodeRay .fl { color:#A4C260 }                      /* float */  
+.CodeRay .fu { color:#FFC56D }                      /* function */  
+.CodeRay .gv { color:#D0CFFE }                      /* global variable */  
+.CodeRay .i  { color:#A4C260 }                      /* integer */  
+.CodeRay .il { background:#151515 }                 /* inline code */  
+.CodeRay .iv { color:#D0CFFE }                      /* instance variable */  
+.CodeRay .pp { color:#E7BE69 }                      /* doctype */  
+.CodeRay .r  { color:#CB7832 }                      /* keyword */  
+.CodeRay .rx { color:#A4C260 }                      /* regex */  
+.CodeRay .s  { color:#A4C260 }                      /* string */  
+.CodeRay .sy { color:#6C9CBD }                      /* symbol */  
+.CodeRay .ta { color:#E7BE69 }                      /* html tag */  
+.CodeRay .pc { color:#6C9CBD }                      /* boolean */

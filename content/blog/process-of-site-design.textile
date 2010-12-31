@@ -10,8 +10,44 @@ excerpt: |
   <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, "feugiat vitae":http://google.com, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Convert @ls -AF1@ files to @css@. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+
+Let's check out the typography!
+
+* list item
+* another list item
+* and one more!
+
+# hello world
+# how are you?
+# i'm good
+# goodbye! :)
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+(fancy)# %Hello World%
+# %How are you?%
+# %I'm good%
+# %Look forward to seeing you soon!%
+# %Love, Dan x%
+
+This is another paragraph.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+<pre><code class="CodeRay language-ruby">compile '/blog/*/' do
+	# render blog articles
+	filter :less
+	filter :rainpress
+end
+</code></pre>
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+
+bq. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
