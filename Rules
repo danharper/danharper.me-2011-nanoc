@@ -48,7 +48,12 @@ end
 compile '/blog/*/' do
 	filter :erb
 	filter :redcloth
+	layout 'blog-post'
 	layout 'default'
+end
+
+route '/blog/ext/*/' do
+	nil
 end
 
 

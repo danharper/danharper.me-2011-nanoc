@@ -9,7 +9,7 @@ title: The Blog
 				<h1 class="<%= i[:external] %>"><%= link_to i[:title], i[:external_url] %></h1>
 				<% if i[:postimg] %>
 					<p class="postimg">
-						<img src="/assets/postimg/<%= i[:postimg] %>" />
+						<img src="/assets/postimg/ext/<%= i[:postimg] %>" />
 					</p>
 				<% end %>
 				<div><%= i.compiled_content %></div>

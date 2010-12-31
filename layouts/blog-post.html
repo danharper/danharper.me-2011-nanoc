@@ -1,0 +1,9 @@
+<section id="blog">
+	<article>
+		<h1><%= @item[:title] %></h1>
+		<p class="postimg">
+			<img src="/assets/postimg/<%= @item[:postimg] %>" />
+		</p>
+		<%= yield %>
+	</article>
+</section>
