@@ -5,13 +5,13 @@ title: Home
 <h1 id="bigfeature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam <a href="#">quam leo</a> sit amet pretium eu, feugiat ut risus.</h1>
 
 <section id="portfolio-preview" class="clearfix">
+	
 	<p>
-		<a href="#">
-			<img src="/images/portfolio/jobsabroad/thumb.jpg" alt="JobsAbroad.ie preview" />
+	<% sorted_portfolio_items[0,2].each do |i| %>
+		<a href="<%= relative_path_to i %>" title="View '<%= i[:title] %>'">
+			<img src="/assets/portfolio/<%= i[:images] %>/<%= i[:thumb] %>" alt="<%= i[:title] %> thumbnail preview" />
 		</a>
-		<a href="#">
-			<img src="/images/portfolio/gp3/thumb.jpg" alt="GamePress 3 preview" />
-		</a>
+	<% end %>
 	</p>
 	<p class="stylish"><a href="/work/">See more of my work</a></p>
 </section>
