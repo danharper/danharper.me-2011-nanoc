@@ -3,15 +3,34 @@ title: The Blog
 ---
 <section id="blog">
 	<% sorted_articles.each do |i| %>
-		<% cl = ' class="' + i[:external] + '"' if i[:external] %>
 		<article>
-			<h1<%= cl %>><%= link_to i[:title], i %></h1>
-			<% if i[:postimg] %>
-				<p class="postimg">
-					<img src="/postimg/<%= i[:postimg] %>" />
+			<% if i[:external] %>
+			
+				<h1 class="<%= i[:external] %>"><%= link_to i[:title], i[:external_url] %></h1>
+				<% if i[:postimg] %>
+					<p class="postimg">
+						<img src="/postimg/<%= i[:postimg] %>" />
+					</p>
+				<% end %>
+				<div><%= i.compiled_content %></div>
+				<p class="stylish clearfix">
+					<%= link_to "Continue Reading", i[:external_url] %>
 				</p>
+				
+			<% else %>
+			
+				<h1><%= link_to i[:title], i %></h1>
+				<% if i[:postimg] %>
+					<p class="postimg">
+						<img src="/postimg/<%= i[:postimg] %>" />
+					</p>
+				<% end %>
+				<div><%= i[:excerpt] %></div>
+				<p class="stylish clearfix">
+					<%= link_to "Continue Reading", i %>
+				</p>
+				
 			<% end %>
-			<%= i[:excerpt] %>
 		</article>
 	<% end %>
 </section>

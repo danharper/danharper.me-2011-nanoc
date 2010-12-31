@@ -1,0 +1,12 @@
+--- 
+title: Create a Basic Shoutbox with PHP and SQL
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/php/create-a-basic-shoutbox-with-php-and-sql/
+postimg: nt-shoutbox.png
+created_at: 2008-10-03
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+In this tutorial, we will be creating a basic ‘Shoutbox’ system with PHP. Aimed at beginners to PHP development, this allows you to get your feet wet working with databases before moving on to some of the more advanced PHP tutorials here at Nettuts+.

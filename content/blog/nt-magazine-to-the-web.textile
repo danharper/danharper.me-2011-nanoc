@@ -1,0 +1,14 @@
+--- 
+title: Bringing the Magazine to the Web
+external: tutsplus
+external_url: http://net.tutsplus.com/articles/web-roundups/bringing-the-magazine-to-the-web/
+postimg: nt-magazine-to-the-web.png
+created_at: 2010-06-23
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+The rise of blogs on the web has brought a quick and easy way for anyone to publish their thoughts online without having to get down and dirty with HTML. Just write your content, hit 'Publish', and your thoughts are instantly available for the masses to read.
+
+For all the good that blogs have done, they've made the internet look predictable when compared to articles printed in a magazine which look completely unique, each with their own art style and layout. As Greg Storey pointed out in a blog post from 2006, "before there were blogs we had websites. Beautiful, random websites that felt more like a zine – one page looking nothing like the one before or after it".

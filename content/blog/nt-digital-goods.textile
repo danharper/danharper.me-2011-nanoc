@@ -1,0 +1,14 @@
+--- 
+title: How to Sell Digital Goods with CodeIgniter
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/php/how-to-sell-digital-goods-with-codeigniter-new-premium-tutorial/
+postimg: nt-digital-goods.jpg
+created_at: 2010-09-15
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+This tutorial published over at Nettuts+ demonstrates how to create a small web app using the CodeIgniter PHP framework to sell digital items (eg. eBooks) securely and accept payments from PayPal.
+
+To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0 or you can purchase a copy for $5 from the "Tuts+ Marketplace":http://marketplace.tutsplus.com/item/how-to-sell-digital-goods-with-codeigniter/126751?ref=danharper.

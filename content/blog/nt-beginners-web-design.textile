@@ -1,0 +1,14 @@
+--- 
+title: The Beginner's Guide to Web Design
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/html-css-techniques/the-beginners-guide-to-web-design-new-premium-series/
+postimg: nt-beginners-web-design.png
+created_at: 2010-06-16
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+Throughout this three-part series, you will learn how to create a website using the latest in web design techniques (HTML5 & CSS3). This series is aimed at those with minimal knowledge of web design.
+
+To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0 or you can purchase a copy for $3 from the "Tuts+ Marketplace":http://marketplace.tutsplus.com/item/the-beginners-guide-to-web-design/118783?ref=danharper.

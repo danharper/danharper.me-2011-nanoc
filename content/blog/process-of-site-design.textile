@@ -1,6 +1,5 @@
 --- 
 title: The process of my new site design
-external: tutsplus
 postimg: process-of-site-design.png
 created_at: 2010-12-31
 updated_at: 2010-12-31

@@ -1,0 +1,12 @@
+--- 
+title: Build a Featured Posts Section for WordPress
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/wordpress/build-a-featured-posts-section-for-wordpress/
+postimg: nt-wp-feature.png
+created_at: 2008-07-31
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+WordPress is awesome. Even more awesome is the fact that it can be customized to power any type of site you like! Here, we’ll be learning how to create a featured and “latest posts” section – easily a ‘must-have’ for all good News/Magazine themes. We’ll also go over using the ‘Custom Fields’ to their fullest potential.

@@ -1,0 +1,14 @@
+--- 
+title: Create a Jobs Board with CodeIgniter
+external: tutsplus
+external_url: http://net.tutsplus.com/articles/news/create-a-jobs-board-with-codeigniter-new-plus-tutorial/
+postimg: nt-jobs-board.png
+created_at: 2009-06-24
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+In this two-part series, we’ll be creating a basic 'Jobs Board', similar to "FreelanceSwitch Jobs" and "Smashing Jobs", using the CodeIgniter PHP framework
+
+To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0 or you can purchase a copy for $3 from the "Tuts+ Marketplace":http://marketplace.tutsplus.com/item/create-a-jobs-board-with-codeigniter/118786?ref=danharper.

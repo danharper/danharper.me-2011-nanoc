@@ -1,0 +1,14 @@
+--- 
+title: The Anatomy of GamePress
+external: themeforest
+external_url: http://blog.themeforest.net/wordpress/the-anatomy-of-gamepress-part-2/
+postimg: nt-gamepress-anatomy.png
+created_at: 2008-10-19
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+"GamePress":http://themeforest.net/item/gamepress/17397?ref=danharper is a "Gaming News & Reviews" theme for WordPress and currently one of the most popular themes at "ThemeForest":http://themeforest.net/?ref=danharper. It is the most advanced theme I’ve created so far, and really pushes what the WordPress engine can do!
+
+This two-part series will focuses on several key areas of the theme which seem to be some of the major selling points. I will also include examples of any important code used and provide links to various tutorials detailing similar techniques.

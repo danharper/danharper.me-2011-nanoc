@@ -1,0 +1,14 @@
+--- 
+title: WordPress, Beginner to Master Series
+external: tutsplus
+external_url: http://net.tutsplus.com/articles/news/new-plus-tutorial-wordpress-beginner-to-master-parts-4-6/
+postimg: nt-wordpress-master.png
+created_at: 2009-04-01
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+Throughout this six-part beginner-to-master series, we’ll be using the advanced features of WordPress to create our own portfolio & blog, complete with an options page, multiple styles and support for the new WordPress 2.7 features.
+
+To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0 or you can purchase a copy for $5 from the "Tuts+ Marketplace":http://marketplace.tutsplus.com/item/wordpress-beginner-to-master-/118788?ref=danharper.

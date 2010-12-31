@@ -1,0 +1,12 @@
+--- 
+title: Create A Tabbed Interface Using jQuery
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/javascript-ajax/create-a-tabbed-interface-using-jquery/
+postimg: nt-jquery-tabs.png
+created_at: 2008-08-13
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+Creating tabbed interfaces suddenly becomes a piece-of-cake when using the Tabs function in the jQuery UI library. It can be utilized to create completely unique interfaces without having to be a coding God – using only one line of code!

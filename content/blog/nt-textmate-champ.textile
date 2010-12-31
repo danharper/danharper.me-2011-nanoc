@@ -1,0 +1,14 @@
+--- 
+title: Learn How to be a TextMate Champion
+external: tutsplus
+external_url: http://net.tutsplus.com/articles/news/learn-how-to-be-a-textmate-champion-new-plus-tutorial/
+postimg: nt-textmate-champ.png
+created_at: 2009-09-02
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+"TextMate":http://macromates.com/ is, by far, the preferred text-editor for most web developers on the Mac. In this Premium screencast, we'll be taking a look at some of the features most developers simply don't use; ones which can massively increase your productivity by allowing you to type less and code more.
+
+To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0 or you can purchase a copy for $3 from the "Tuts+ Marketplace":http://marketplace.tutsplus.com/item/learn-how-to-be-a-textmate-champion/118791?ref=danharper.

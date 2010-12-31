@@ -1,0 +1,14 @@
+--- 
+title: From CodeIgniter to Ruby on Rails
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/ruby/from-codeigniter-to-ruby-on-rails-a-conversion/
+postimg: nt-ci-ror-conversion.png
+created_at: 2009-07-30
+updated_at: 2010-12-30
+kind: article
+published: true
+---
+
+Today, we'll be creating a "simple shoutbox":http://net.tutsplus.com/tutorials/php/create-a-basic-shoutbox-with-php-and-sql/ using the CodeIgniter PHP framework. We’ll then port this exact application, piece-by-piece, to Ruby on Rails!
+
+Throughout this tutorial, we’ll create a simple shoutbox application in CodeIgniter, and then port it over to Ruby on Rails. We’ll be comparing the code between the two applications to see where they are similar, and where they differ. Learning Rails is much easier if you are already familiar with an MVC (Model, View, Controller) framework structure.
