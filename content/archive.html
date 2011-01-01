@@ -1,0 +1,9 @@
+--- 
+title: Blog Archive
+---
+
+<section id="blog">
+		<% sorted_articles.each do |i| %>
+			<%= render "blog-post-preview", :i => i %>
+		<% end %>
+</section>

@@ -2,39 +2,11 @@
 title: The Blog
 ---
 <section id="blog">
-	<% sorted_articles.each do |i| %>
-		<article>
-			<% if i[:external] %>
-			
-				<h1 class="<%= i[:external] %>"><%= link_to i[:title], i[:external_url] %></h1>
-				<% if i[:postimg] %>
-					<p class="postimg">
-						<img src="/assets/postimg/ext/<%= i[:postimg] %>" />
-					</p>
-				<% end %>
-				<div><%= i.compiled_content %></div>
-				<p class="stylish clearfix">
-					<%= link_to "Continue Reading", i[:external_url] %>
-				</p>
-				
-			<% else %>
-			
-				<h1><%= link_to i[:title], i %></h1>
-				<% if i[:postimg] %>
-					<p class="postimg">
-						<img src="/assets/postimg/<%= i[:postimg] %>" />
-					</p>
-				<% end %>
-				<% if i[:excerpt] %>
-					<div><%= i[:excerpt] %></div>
-				<% else %>
-					<div><%= i.compiled_content %></div>
-				<% end %>
-				<p class="stylish clearfix">
-					<%= link_to "Continue Reading", i %>
-				</p>
-				
-			<% end %>
-		</article>
+	<% sorted_articles[0,10].each do |i| %>
+		<%= render "blog-post-preview", :i => i %>
 	<% end %>
 </section>
+
+<p class="archives">
+	<%= link_to 'View more posts in the archive.', '/archive/' %>
+</p>
