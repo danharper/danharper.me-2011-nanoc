@@ -1,8 +1,8 @@
 @import "reset.css";
 
 @font-face {
-	font-family: "League Gothic";
-	src: url(assets/fonts/League Gothic.otf);
+	font-family: "Geomancy";
+	src: url(assets/fonts/Geomancy - Extra Bold.otf);
 }
 
 .rounded_corners (@radius: 5px) {
@@ -37,7 +37,7 @@
 
 @backup_fonts: Helvetica, Arial, sans-serif;
 @header_fonts: "Yanone Kaffeesatz", @backup_fonts;
-   @nav_fonts: "League Gothic", Impact, @backup_fonts;
+   @nav_fonts: "league-gothic-1", "league-gothic-2", Impact, @backup_fonts;
   @body_fonts: Helvetica, Arial, sans-serif;
   @code_fonts: "Monaco", "Bitstream Vera Sans Mono", "Courier New", monospace;
 
@@ -164,7 +164,7 @@ h1#bigfeature {
 }
 
 #portfolio-preview {
-	margin-bottom: 15px;
+	margin-bottom: 50px;
 	img {
 	}
 	p:first-child {
@@ -418,4 +418,22 @@ p.meta, p.archives {
 	text-align: right;
 }
 
-p.archives{}
+#about-me {
+	background: url(/assets/images/binary.png) no-repeat;
+	margin: 0 -40px;
+	padding: 25px 40px;
+	h1 {
+		background: url(/assets/images/about-me.png) no-repeat;
+		height: 132px;
+		width: 368px;
+		margin-bottom: 35px;
+	}
+	img {
+		float: right;
+		margin-right: -170px;
+		margin-top: -180px;
+	}
+	p {
+//		font-size: 15px;
+	}
+}
