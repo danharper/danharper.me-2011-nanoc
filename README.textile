@@ -1,0 +1,5 @@
+h1. DanHarper.me 2011
+
+This is my new website for 2011. It's running on the "nanoc":http://nanoc.stoneship.org/ static-site generator - no more server-side scripts & database queries to slow everything down!
+
+The site design as a whole & content are (c) to me. Use chunks of the code, or the nanoc files or whatever.
