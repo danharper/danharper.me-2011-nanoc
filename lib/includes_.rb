@@ -1,4 +1,4 @@
-# file is called helpers_.rb and not helpers.rb
+# file is called includes_.rb and not includes.rb
 # to ensure this file is loaded last (after the custom
 # Portfolio helper is loaded) to prevent errors
 # (files are loaded alphabetically)
