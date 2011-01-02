@@ -22,12 +22,12 @@
 		<% end %>
 		<% if i[:excerpt] %>
 			<div><%= i[:excerpt] %></div>
+			<p class="stylish clearfix">
+				<%= link_to "Continue Reading", i %>
+			</p>
 		<% else %>
 			<div><%= i.compiled_content %></div>
 		<% end %>
-		<p class="stylish clearfix">
-			<%= link_to "Continue Reading", i %>
-		</p>
 		
 	<% end %>
 </article>

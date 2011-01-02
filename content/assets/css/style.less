@@ -81,6 +81,10 @@ ul, ol {
 	margin-bottom: 20px;
 }
 
+li {
+	margin-bottom: 5px;
+}
+
 a:link, a:visited {
 	color: @link_colour;
 	text-decoration: none;
@@ -315,7 +319,7 @@ ol.fancy {
 	list-style-position: inside;
 	margin-left: 10px;
 	li {
-		background: url(assets/images/list-circle.png) no-repeat center left;
+		background: url(assets/images/list-circle.png) no-repeat top left;
 		line-height: 26px;
 		margin-bottom: 5px;
 		padding-left: 7px;
@@ -368,24 +372,24 @@ pre {
 	}
 }
    
-.CodeRay .an { color:#E7BE69 }                      /* html attribute */  
-.CodeRay .c  { color:#BC9358; font-style: italic; } /* comment */  
-.CodeRay .ch { color:#509E4F }                      /* escaped character */  
-.CodeRay .cl { color:#FFF }                         /* class */  
-.CodeRay .co { color:#FFF }                         /* constant */  
-.CodeRay .fl { color:#A4C260 }                      /* float */  
-.CodeRay .fu { color:#FFC56D }                      /* function */  
-.CodeRay .gv { color:#D0CFFE }                      /* global variable */  
-.CodeRay .i  { color:#A4C260 }                      /* integer */  
-.CodeRay .il { background:#151515 }                 /* inline code */  
-.CodeRay .iv { color:#D0CFFE }                      /* instance variable */  
-.CodeRay .pp { color:#E7BE69 }                      /* doctype */  
-.CodeRay .r  { color:#CB7832 }                      /* keyword */  
-.CodeRay .rx { color:#A4C260 }                      /* regex */  
-.CodeRay .s  { color:#A4C260 }                      /* string */  
-.CodeRay .sy { color:#6C9CBD }                      /* symbol */  
-.CodeRay .ta { color:#E7BE69 }                      /* html tag */  
-.CodeRay .pc { color:#6C9CBD }                      /* boolean */
+.an { color:#E7BE69 }                      /* html attribute */  
+.c  { color:#BC9358; font-style: italic; } /* comment */  
+.ch { color:#509E4F }                      /* escaped character */  
+.cl { color:#FFF }                         /* class */  
+.co { color:#FFF }                         /* constant */  
+.fl { color:#A4C260 }                      /* float */  
+.fu { color:#FFC56D }                      /* function */  
+.gv { color:#D0CFFE }                      /* global variable */  
+.i  { color:#A4C260 }                      /* integer */  
+.il { background:#151515 }                 /* inline code */  
+.iv { color:#D0CFFE }                      /* instance variable */  
+.pp { color:#E7BE69 }                      /* doctype */  
+.r  { color:#CB7832 }                      /* keyword */  
+.rx { color:#A4C260 }                      /* regex */  
+.s  { color:#A4C260 }                      /* string */  
+.sy { color:#6C9CBD }                      /* symbol */  
+.ta { color:#E7BE69 }                      /* html tag */  
+.pc { color:#6C9CBD }                      /* boolean */
 
 #disqus_thread {
 	padding-top: 25px;
@@ -433,7 +437,10 @@ p.meta, p.archives {
 		margin-right: -170px;
 		margin-top: -180px;
 	}
-	p {
-//		font-size: 15px;
-	}
+}
+
+p.attribution {
+	color: #666;
+	font-size: @body_font_size - 3;
+	font-style: italic;
 }

@@ -1,11 +1,46 @@
 --- 
 title: A New Year, A New Site
-//postimg: process-of-site-design.png
-created_at: 2010-12-31
-updated_at: 2010-12-31
+postimg: new-year-new-site.png
+created_at: 2011-01-01
+updated_at: 2011-01-01
 kind: article
 published: true
-disqus: disable
+//disqus: disable
+excerpt: <p>It's been a whole year since I last had what I could think of as a "proper site", and not just a landing page with links to my profiles elsewhere on the web. It's always such a challenge to create something for yourself and be 100% pleased with it as I must have gone through over 20 new designs which I get part-way through, decide I don't like it any more and abandon it.</p><p>This time it'll be different. I'm going into this new design knowing that I'll probably be making slight changes to it every few weeks, constantly improving, constantly changing.</p><p>I've also never really blogged before as I've never been happy with the tools available. Previous versions of my site have been built on the <a href="http://wordpress.org">WordPress</a> blogging platform which I've also hacked a portfolio section to, so it's not that I don't understand WordPress, but actually writing a blog post in the WordPress dashboard to be a horrible experiece.</p>
 ---
 
-18 months. That's how long it's been since I last had what I think of as a "proper site" (ie. not just a landing page with links to my profiles elsewhere on the web). It's just hard, you know; hard to create something for yourself and be 100% pleased with it.
+It's been a whole year since I last had what I could think of as a "proper site", and not just a landing page with links to my profiles elsewhere on the web. It's always such a challenge to create something for yourself and be 100% pleased with it as I must have gone through over 20 new designs which I get part-way through, decide I don't like it any more and abandon it.
+
+This time it'll be different. I'm going into this new design knowing that I'll probably be making slight changes to it every few weeks, constantly improving, constantly changing.
+
+I've also never really blogged before as I've never been happy with the tools available. Previous versions of my site have been built on the "WordPress":http://wordpress.org blogging platform which I've also hacked a portfolio section to, so it's not that I don't understand WordPress, but actually writing a blog post in the WordPress dashboard to be a horrible experiece.
+
+There's text boxes, checkboxes, sliders and buttons for a huge amount of settings cluttering up the 'Write' page from what's most important: your content!
+
+!(full_site_ss)/assets/blog/new-year-new-site/wp-dash.png!
+
+I was about ready to start work on my own little CMS/blogging script which would do content creation the _right way_ when I discovered "nanoc":http://nanoc.stoneship.org/, a surprisingly flexible "static-site" generator which allows you to write your site using Ruby which will then be compiled into normal, static HTML pages which you can upload to your site. nanoc offered me:
+
+# Freedom from a database - accessing it for every page request is slow and stupid.
+# The ability to write my content into whatever format I please, using whatever text editor I choose. I'm formatting this post in Textile using MacVim and nanoc will filter this content through "RedCloth":http://redcloth.org/ to parse it into valid HTML.
+# Version control over not just my site's files, but over my blog posts, too!
+# No security holes! As no server-side code is being run, there's not a chance of someone exploiting yet another hole in WordPress' defenses.
+# SEO-friendly URLs without any complex .htaccess rules or behind-the-scenes trickery - just normal files and directories!
+
+And just to show off the simpilicity: this is how I'll be backing up this post, publishing it to the site and pushing it to GitHub:
+
+<pre><code class="language-bash">nanoc compile
+	git commit -a
+	git push origin master
+	deploy r:sync
+</code></pre>
+
+But I'm going to write a simple Rake task to make the whole process as easy as:
+
+<pre><code class="language-bash">rake publish</code></pre>
+
+I'm going to publish another post in a few days time detailing the process I took in both designing & developing this site.
+
+I've also decided to open-source this site and I've released it on my "GitHub profile":https://github.com/danharper/Site-2011 along with my previous "landing page":https://github.com/danharper/Landing-Page design.
+
+p(attribution). Post image courtesty of "tetraconz - Flickr":http://www.flickr.com/photos/lmmnfrsh/507284458/.
