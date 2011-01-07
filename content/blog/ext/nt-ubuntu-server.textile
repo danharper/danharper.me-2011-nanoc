@@ -1,0 +1,16 @@
+--- 
+title: Setup an Ubuntu Dev Server for PHP MySQL and Ruby on Rails
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/other/setup-a-dev-server-for-php-mysql-and-ruby-on-rails-new-premium-tutorial/
+postimg: nt-ubuntu-server.png
+created_at: 2010-01-06
+updated_at: 2010-01-06
+kind: article
+published: true
+---
+
+In this tutorial and screencast, you’ll learn how to turn that old computer you have lying around into a full-featured test bed for your websites!
+
+We’ll set up a typical LAMP server with Ubuntu Server 10.10, using Apache 2, PHP 5, MySQL 5.5 and SQLite3. We'll also build in support for your Ruby on Rails 3 apps!
+
+Don't have a spare computer to set up a server, but want to try it out? You can use a Virtual Machine instead - in fact that's what I'm doing in the screencast!
