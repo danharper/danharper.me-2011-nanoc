@@ -1,0 +1,48 @@
+---
+title: Moving files between servers
+//postimg: 
+created_at: 2011-01-08
+updated_at: 2011-01-08
+kind: article
+published: true
+excerpt: <p>While publishing my <a href="http://net.tutsplus.com/tutorials/other/setup-a-dev-server-for-php-mysql-and-ruby-on-rails-new-premium-tutorial/">latest Nettuts+ post</a>, a screencast tutorial on setting up a LAMP server with Ubuntu, I first needed to get the video, a 150mb archive, to the editor.</p><p>Now, I could have uploaded the file through FTP to my own server then sent him the link, but I've developed a bit of a distrust of FTP with it corrupting a few of my files, and with an upload speed of ~45kb/s I only wanted to do this once.</p><p>So I went with <a href="http://rapidshare.com">Rapidshare</a> a popular file hosting service. About an hour later, the file was uploaded and I sent the link off to Jeffrey to be published.</p>
+---
+
+While publishing my "latest Nettuts+ post":http://net.tutsplus.com/tutorials/other/setup-a-dev-server-for-php-mysql-and-ruby-on-rails-new-premium-tutorial/, a screencast tutorial on setting up a LAMP server with Ubuntu, I first needed to get the video, a 150mb archive, to the editor.
+
+Now, I could have uploaded the file through FTP to my own server then sent him the link, but I've developed a bit of a distrust of FTP with it corrupting a few of my files, and with an upload speed of ~45kb/s I only wanted to do this once.
+
+So I went with "Rapidshare":http://rapidshare.com: a popular file hosting service. About an hour later, the file was uploaded and I sent the link off to Jeffrey to be published.
+
+Now, you may be aware that the Tuts+ network allow their authors to publish the Premium tutorials they've created to the "Tuts+ Marketplace":http://marketplace.tutsplus.com for people who would rather use their marketplace allowance to buy the occasional premium tutorial than purchase a recurring Tuts+ Premium membership. So I also needed to get this 150mb archive up on the Marketplace ASAP to maximise the number of potential buyers.
+
+So I could have uploaded the file through the marketplace's web-based file uploader, but I knew there had to be a faster way. Well, the marketplace also allow you to upload your large files via FTP if you prefer, but as I mentioned I don't really trust my connection with FTP.
+
+But I do trust my web server's connection. So how do I go about using my web server to upload a file hosted on Rapidshare to my FTP account at Envato? *SSH*!
+
+Typically to download a Rapidshare file you must either:
+
+# Be a 'free' user, wait for a count-down and enter a Captcha before the download starts
+# Be a Premium member (which I am) and the download starts immediatly
+
+So I need a way to log in to Rapidshare account on my web server so I can get an instant download. I could have figured out the details behind logging in and storing a cookie, but I remembered Rapidshare allow you to mark any of your files as "TrafficShare" which means that this anyone downloading the file will be treated as a Premium user and the traffic they use will be deducted from your own download limit.
+
+With my file marked as "TrafficShare", I connected to my server through SSH and entered:
+
+<pre><code class="language-bash">$ wget http://rapidshare.com/path/to/my/file</code></pre>
+
+This downloaded the file to the server almost instantly. Now I could FTP this file to my Envato account:
+
+<pre><code class="language-bash">$ ftp ftp.marketplace.envato.com
+Connected to ftp.marketplace.envato.com.
+220
+Name (ftp.marketplace.envato.com): danharper
+331 Please specifiy the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+
+ftp> put nettuts-ubuntu-server.tgz</code></pre>
+
+A few seconds later, the file had been sent over! This whole process took about 5 minutes, as opposed to the hour it would have taken me to upload it over my own connection.
