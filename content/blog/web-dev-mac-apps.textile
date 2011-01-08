@@ -1,0 +1,55 @@
+---
+title: Apps a Web Developer Couldn't Live Without
+kind: article
+published: false
+---
+
+* XAMPP / Apache,MySQL,PHP
+* Sparrow
+* Twitter.app
+* MacVim
+* TextMate
+* Chrome
+* Firefox
+* Spotify
+* Photoshop
+* Speed Download
+* uTorrent
+* Adium
+* Dropbox
+* Colloquy
+* Espionage
+* smcFanControl
+* Alfred
+* AppShelf
+* Audacity
+* Handbrake
+* Chicken of the VNC
+* TeamViewer
+* CleanMyMac
+* ControllerMate
+* FaceTime
+* Skype
+* Fluid
+* Hex Fiend
+* iTunes Alarm
+* Less
+* LittleSnapper
+* Parallels Desktop
+* Reeder
+* Times
+* Sequel Pro
+* ScreenFlow
+* The Hit List/Things
+* The Unarchiver
+* Transmit
+* VLC
+
+* Steam
+* Braid
+* Machinarium
+* Peggle
+* Plants vs Zombies
+* World of Goo
+* Minecraft
+* Angry Birds
