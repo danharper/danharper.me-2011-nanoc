@@ -13,4 +13,4 @@ In this tutorial and screencast, you’ll learn how to turn that old computer yo
 
 We’ll set up a typical LAMP server with Ubuntu Server 10.10, using Apache 2, PHP 5, MySQL 5.5 and SQLite3. We'll also build in support for your Ruby on Rails 3 apps!
 
-To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0.
+To view this tutorial you must be a "Tuts+ Premium member":http://tutsplus.com/amember/go.php?r=3096&i=l0 or you can purchase a copy for $3 from the "Tuts+ Marketplace":http://marketplace.tutsplus.com/item/setup-a-dev-server-for-php-mysql-ruby-on-rails/151053?ref=danharper.
