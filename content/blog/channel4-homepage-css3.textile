@@ -31,18 +31,18 @@ In this case I've marked @font-size@ as a transition property and set a transiti
 Another example would be gradually changing the background colour on an element:
 
 <pre><code class="language-css">a:link, a:visited {
-		background-color: red;
-		color: blue;
-		padding: 10px 15px;
-		text-decoration: none;
+	transition-property: background-color, color, padding;
+	transition-duration: 1s;
+	background-color: red;
+	color: blue;
+	padding: 10px 15px;
+	text-decoration: none;
 }
 
 a:hover {
-		transition-property: background-color, color, padding;
-		transition-duration: 1s;
-		background-color: black;
-		color: white;
-		padding: 10px 30px;
+	background-color: black;
+	color: white;
+	padding: 10px 30px;
 }
 </code></pre>
 
