@@ -4,52 +4,69 @@ kind: article
 published: false
 ---
 
-* XAMPP / Apache,MySQL,PHP
+h2. Social, News & Communication
+* Twitter
 * Sparrow
-* Twitter.app
-* MacVim
-* TextMate
-* Chrome
-* Firefox
-* Spotify
-* Photoshop
-* Speed Download
-* uTorrent
-* Adium
-* Dropbox
-* Colloquy
-* Espionage
-* smcFanControl
-* Alfred
-* AppShelf
-* Audacity
-* Handbrake
-* Chicken of the VNC
-* TeamViewer
-* CleanMyMac
-* ControllerMate
-* FaceTime
-* Skype
-* Fluid
-* Hex Fiend
-* iTunes Alarm
-* Less
-* LittleSnapper
-* Parallels Desktop
 * Reeder
 * Times
-* Sequel Pro
-* ScreenFlow
-* The Hit List/Things
-* The Unarchiver
-* Transmit
-* VLC
+* Adium
+* Skype
+* Colloquy
+* FaceTime
 
+h2. Essentials
+* XAMPP
+* Photoshop
+
+h2. Editors
+* MacVim
+* TextMate
+
+h2. Browsers
+* Chrome
+* Firefox
+* Opera
+* Parallels Desktop
+
+h2. Work Faster, Work Better
+* Transmit
+* LittleSnapper
+* Sequel Pro
+* LESS
+* The Hit List
+
+h2. Screencasting
+* ScreenFlow
+* Audacity
+* Handbrake
+
+h2. Misc Tools
+* Dropbox
+* Alfred
+* The Unarchiver
+* Espionage
+* smcFanControl
+* CleanMyMac
+* Fluid
+* AppShelf
+* VLC
+* Hex Fiend
+* iTunes Alarm
+* ControllerMate
+
+h2. File Sharing
+* Speed Download
+* uTorrent
+
+h2. Background Noise
+* Spotify
+
+h2. Down Time
 * Steam
 * Braid
 * Machinarium
 * Peggle
 * Plants vs Zombies
+* Angry Birds
 * World of Goo
 * Minecraft
-* Angry Birds

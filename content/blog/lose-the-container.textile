@@ -1,0 +1,61 @@
+--- 
+title: Lose the container - style the body
+//postimg: new-year-new-site.png
+created_at: 2011-01-16
+updated_at: 2011-01-16
+kind: article
+published: false
+excerpt: <p>A quick tip I learnt recently is that the <code>div#container</code> typically used to center content isn't necessary in modern browsers. As the <code><body></code> is treated as an ordinary block element, we can style that instead! Click through for an example.</p>
+---
+A quick tip I learnt recently is that the @div#container@ typically used to center content isn't necessary in modern browsers. Take this example:
+
+<pre><code class="language-html"><!doctype html>
+<html lang="en">
+<head>
+	<title>Example A</title>
+	<style type="text/css">
+		body {
+			background: #333;
+		}
+
+		#container {
+			background: #eee;
+			margin: 15px auto;
+			padding: 30px;
+			width: 560px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	</div>
+</body>
+</html></code></pre>
+
+A fairly typical start to a page (yes, the @style@ tag is bad, but in a small example like this I'll let it slide).
+
+As @<body>@ is treated as an ordinary block element on the page, we can lose the @div#container@ by moving the @body@ styles to the @html@ element, and @#container@ to @body@:
+
+<pre><code class="language-html"><!doctype html>
+<html lang="en">
+<head>
+	<title>Example B</title>
+	<style type="text/css">
+		html {
+			background: #333;
+		}
+
+		body {
+			background: #eee;
+			margin: 15px auto;
+			width: 560px;
+		}
+	</style>
+</head>
+<body>
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</body>
+</html></code></pre>
+
+This will not work with Internet Explorer 7 and below.

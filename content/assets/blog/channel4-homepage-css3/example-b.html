@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Channel 4 Homepage in CSS3</title>
+	<link rel="stylesheet" href="example-style.css">
+</head> 
+<body>
+
+	<header class="clearfix">
+		<h1><a href="#" class="ir">Channel 4</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#">Film4</a></li>
+				<li><a href="#">More4</a></li>
+				<li><a href="#">E4</a></li>
+				<li><a href="#">4Music</a></li>
+				<li><a href="#"><span>4oD</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="slider">
+		<img src="logo-large.png" alt="Channel 4 logo">
+		<ul>
+			<li><a href="#">TV Listings</a></li>
+			<li><a href="#">Programmes</a></li>
+			<li><a href="#">Watch 4oD</a></li>
+			<li><a href="#">Explore</a></li>
+		</ul>
+		
+		<article>
+			<h2><a href="#">Welcome to Channel 4</a></h2>
+			<p>And the nominees are&hellip;</p>
+		</article>
+	</section>
+	
+	<footer>
+		<p>Logos &copy; <a href="http://channel4.com">Channel 4</a>. Large image by <a href="http://www.flickr.com/photos/childofwar/2978495424/">Amir Kuckovic</a>.</p>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var prev;
+			var next;
+			$("section li a").hover(
+				function () {
+					prev = $(this).parent().prev("li").children("a");
+					next = $(this).parent().next("li").children("a");
+					prev.addClass("hovered");
+					next.addClass("hovered");
+				},
+				function () {
+					prev.removeClass("hovered");
+					next.removeClass("hovered");
+				}
+			);
+		});
+	</script>
+</body>
+</html>

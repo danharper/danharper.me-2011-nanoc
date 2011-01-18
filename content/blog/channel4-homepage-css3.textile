@@ -1,0 +1,91 @@
+--- 
+title: A (Very) Small Look at CSS3 Transitions
+//postimg: new-year-new-site.png
+created_at: 2011-01-17
+updated_at: 2011-01-17
+kind: article
+published: true
+excerpt: <p>Sometimes I like to re-create effects I like from other sites. I find this is a great way to learn a new technology or skill. Today, I decided to have a go at creating the big &#147;Welcome to Channel 4&#148; navigation area on the <a href="http://www.channel4.com/">Channel 4 homepage</a> in CSS3.</p>
+---
+Sometimes I like to re-create effects I like from other sites. I find this is a great way to learn a new technology or skill. Today, I decided to have a go at creating the big "Welcome to Channel 4" navigation area on the "Channel 4 homepage":http://www.channel4.com/ in CSS3.
+
+There's a nice flash animation on the navigation links. On hover the link gets larger, and the two links on either side also get slightly bigger.
+
+I still hadn't got round to experimenting with CSS3 animations, so this was new for me. I knew that basically I had to change the font size of a link when it's hovered over (easy enough), and use CSS3 to somehow ease in to and out of the new size.
+
+A bit of searching and I came up with this:
+
+<pre><code class="language-css">section li a:hover {
+	transition-property: font-size;
+	transition-duration: 0.3s;
+	font-size: 30px;
+}</code></pre>
+
+<aside>
+	(Obviously with the @-webkit-@ and @-moz-@ vendor selectors as the spec isn't yet finalised).
+</aside>
+
+The @transition-property@ CSS3 property allows you to mark any other CSS property on an element to be animated through a "transition".
+
+In this case I've marked @font-size@ as a transition property and set a transition duration of 0.3 seconds. This means that when the font size is changed to 30px, it will occur gradually over a period of 0.3 seconds.
+
+Another example would be gradually changing the background colour on an element:
+
+<pre><code class="language-css">a:link, a:visited {
+		background-color: red;
+		color: blue;
+		padding: 10px 15px;
+		text-decoration: none;
+}
+
+a:hover {
+		transition-property: background-color, color, padding;
+		transition-duration: 1s;
+		background-color: black;
+		color: white;
+		padding: 10px 30px;
+}
+</code></pre>
+
+<aside>
+	View a demo of this code <a href="/assets/blog/channel4-homepage-css3/example-bg.html">here</a>.
+</aside>
+
+Anyway, with the transition working, this simple effect is done. You can see the example below (in an iframe of all things :S)...
+
+<iframe src="/assets/blog/channel4-homepage-css3/example.html" width="980" height="92%" scrolling="auto" class="inline-site-960"><p>Iframes disabled, eh? <a href="/assets/blog/channel4-homepage-css3/example.html">Click here to view the demo</a>.</p></iframe>
+
+One thing which doesn't work, is the change in size of the two links next to the one currently being hovered. As far as I know, there isn't a way to target the previous and next link in CSS (or maybe there is and I'm just low on sleep). So I decided to use jQuery to target those links, and apply/remove a class to them as needed:
+
+<pre><code class="language-js">$(function() {
+	var prev;
+	var next;
+	$("section li a").hover(
+		function () {
+			prev = $(this).parent().prev("li").children("a");
+			next = $(this).parent().next("li").children("a");
+			prev.addClass("hovered");
+			next.addClass("hovered");
+		},
+		function () {
+			prev.removeClass("hovered");
+			next.removeClass("hovered");
+		}
+	);
+});</code></pre>
+
+<aside>
+	I'm still trying out different methods of syntax highlighting, and I'm having trouble getting code indentation to work with the current method I'm using...
+</aside>
+
+And the CSS:
+
+<pre><code class="language-css">section li a.hovered {
+	font-size: 20px;
+}</code></pre>
+
+I'm not that great with jQuery so there may be a more elegant way to achieve this, but I tried. Here's the example:
+
+<iframe src="/assets/blog/channel4-homepage-css3/example-b.html" width="980" height="92%" scrolling="auto" class="inline-site-960"><p>Iframes disabled, eh? <a href="/assets/blog/channel4-homepage-css3/example-b.html">Click here to view the demo</a>.</p></iframe>
+
+The effect on the adjacent links is subtle but quite jumpy/slow so it's not something I'd use in a different project unless I could make it smoother.
