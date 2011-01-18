@@ -51,7 +51,7 @@ a:hover {
 	View a demo of this code <a href="/assets/blog/channel4-homepage-css3/example-bg.html">here</a>.
 </aside>
 
-Anyway, with the transition working, this simple effect is done. You can see the example below (in an iframe of all things :S)...
+Anyway, with the transition working, this simple effect is done. You can see <a href="/assets/blog/channel4-homepage-css3/example.html">the example</a> below (in an iframe of all things :S)...
 
 <iframe src="/assets/blog/channel4-homepage-css3/example.html" width="980" height="92%" scrolling="auto" class="inline-site-960"><p>Iframes disabled, eh? <a href="/assets/blog/channel4-homepage-css3/example.html">Click here to view the demo</a>.</p></iframe>
 
@@ -84,7 +84,7 @@ And the CSS:
 	font-size: 20px;
 }</code></pre>
 
-I'm not that great with jQuery so there may be a more elegant way to achieve this, but I tried. Here's the example:
+I'm not that great with jQuery so there may be a more elegant way to achieve this, but I tried. Here's the <a href="/assets/blog/channel4-homepage-css3/example-b.html">example</a>:
 
 <iframe src="/assets/blog/channel4-homepage-css3/example-b.html" width="980" height="92%" scrolling="auto" class="inline-site-960"><p>Iframes disabled, eh? <a href="/assets/blog/channel4-homepage-css3/example-b.html">Click here to view the demo</a>.</p></iframe>
 

@@ -70,7 +70,7 @@ end
 compile '/blog/*/' do
 	filter :erb
 	filter :redcloth
-#	filter :absolutify
+	filter :absolutify
 	filter :colorize_syntax,
 				 :default_colorizer => :coderay#,
 				 #:coderay    => { :line_numbers => :inline }
