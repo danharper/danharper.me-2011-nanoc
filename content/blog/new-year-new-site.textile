@@ -41,6 +41,6 @@ But I'm going to write a simple Rake task to make the whole process as easy as:
 
 I'm going to publish another post in a few days time detailing the process I took in both designing & developing this site.
 
-I've also decided to open-source this site and I've released it on my "GitHub profile":https://github.com/danharper/Site-2011 along with my previous "landing page":https://github.com/danharper/Landing-Page design.
+I've also decided to open-source this site and I've released it on my "GitHub profile":https://github.com/danharper/danharper.me along with my previous "landing page":https://github.com/danharper/Landing-Page design.
 
 p(attribution). Post image courtesty of "tetraconz - Flickr":http://www.flickr.com/photos/lmmnfrsh/507284458/.
