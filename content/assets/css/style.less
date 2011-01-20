@@ -86,6 +86,12 @@ li {
 }
 
 a:link, a:visited {
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.3s; 
+	-moz-transition-property: color;
+	-moz-transition-duration: 0.3s;
+	transition-property: color;
+	transition-duration: 0.3s;
 	color: @link_colour;
 	text-decoration: none;
 	:hover {
@@ -144,6 +150,8 @@ header {
 	footer {
 		background: url(assets/images/infinity.png) no-repeat bottom right #fff;
 		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-radius-bottomright: 5px;
+		border-bottom-right-radius: 5px;
 		min-height: 186px;
 		margin: 20px -40px 0 0;
 		section {
@@ -197,6 +205,12 @@ h1#bigfeature {
 }
 
 .stylish a {
+	-webkit-transition-property: border;
+	-webkit-transition-duration: 0.3s;  
+	-moz-transition-property: border;
+	-moz-transition-duration: 0.3s;  
+	transition-property: border;
+	transition-duration: 0.3s;  
 	border: 2px solid white;
 	clear: both;
 	color: #363636;
