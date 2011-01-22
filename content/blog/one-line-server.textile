@@ -1,0 +1,37 @@
+---
+title: One Line Server Install
+//postimg: 
+created_at: 2011-01-22
+updated_at: 2011-01-22
+kind: article
+published: true
+excerpt: <p>I've recently published a script called <a href="https://github.com/danharper/onelineserver">One Line Server</a> over at GitHub which, with one line, installs everything you need to run a LAMP and Rails web server with Ubuntu. This removes a bulk of the work required to set up a server manually, as I detailed recently in my <a href="http://net.tutsplus.com/tutorials/other/setup-a-dev-server-for-php-mysql-and-ruby-on-rails-new-premium-tutorial/">Setting up an Ubuntu web server</a> screencast for Nettuts+.</p><p>The script itself is a fork of Joshua Frye's <a href="https://github.com/joshfng/railsready">Rails Ready</a> script which installs Ruby and Rails on Ubuntu. Click through to see just how easy it can be to set up your own development web server!</p>
+---
+I've recently published a script called "One Line Server":https://github.com/danharper/onelineserver over at GitHub which, with one line, installs everything you need to run a LAMP and Rails web server with Ubuntu. This removes a bulk of the work required to set up a server manually, as I detailed recently in my "Setting up an Ubuntu web server":http://net.tutsplus.com/tutorials/other/setup-a-dev-server-for-php-mysql-and-ruby-on-rails-new-premium-tutorial/ screencast for Nettuts+.
+
+The script itself is a fork of Joshua Frye's "Rails Ready":https://github.com/joshfng/railsready script which installs Ruby and Rails on Ubuntu.
+
+"*One Line Server*":https://github.com/danharper/onelineserver is available over at GitHub and just like the original 'Rails Ready' script, can be install with just one line in the terminal:
+
+<pre><code class="language-shell">sudo apt-get -y install curl && curl https://github.com/danharper/onelineserver/raw/master/railsready.sh >> railsready.sh && chmod a+x railsready.sh && ./railsready.sh</code></pre>
+
+One Line Server gives you the following:
+
+* Updates your system
+* Apache server 2.2.17
+* PHP 5.3.5
+* MySQL server 5.5
+* SQLite 3.7.4
+* Ruby 1.9.2 (either through "RVM":http://rvm.beginrescueend.com/ or natively)
+* Git
+* OpenSSH server
+* Imagemagick
+* Rubygems
+* Bundler gem
+* Rails 3 gem
+
+<aside>
+	Remember that it's dangerous to run random shell scripts from the internet, but you can be assured this script will not harm your system ("check out the source yourself":https://github.com/danharper/onelineserver/raw/master/railsready.sh).
+<p></p></aside>
+
+You can contribute to "One Line Server":https://github.com/danharper/onelineserver or the original "Rails Ready":https://github.com/joshfng/railsready by forking the repo at GitHub.
