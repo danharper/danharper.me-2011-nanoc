@@ -1,0 +1,28 @@
+--- 
+title: Book Review - PHP 5 Social Networking
+postimg: php5-social-networking.png
+created_at: 2011-02-06
+updated_at: 2011-02-06
+kind: article
+published: true
+//disqus: disable
+---
+The guys at Packt Publishing recently emailed me asking if I'd be interested in reviewing their latest book, "PHP 5 Social Networking":https://www.packtpub.com/php-create-powerful-dynamic-social-networking-website/book by Michael Peacock. Of course I jumped at the chance of receiving another free book!
+
+The book guides you through the process of building a fully-featured social networking site for Dinosaur owners, complete with user profiles, a status stream, events and groups. While the book pushes itself as a 'social networking' book, everything you will learn is adaptable to any type of site - the social network is simply the demo application you will build.
+
+The book starts you off by building an MVC framework on which the rest of the application will be built upon. MVC, for those unfamiliar, stands for Model-View-Controller and is a programming style whereby your code is split into three logic sections. The Controller processes a user's request and calls the relevant models and files which will be needed. The Model handles database interaction, and the View is the template the data will be displayed in. The idea is to not have large chunks of PHP code mixed in with your HTML layout files (after all, you wouldn't include CSS in your HTML, so why big chunks of PHP logic?)
+
+The framework itself is completely application-agnostic and can be re-used on any other web application project you have.
+
+Michael does a great job demonstrating the best way to do a task. You learn to build your own database class for handling database interaction instead of relying on PHP's ageing mysql() class.
+
+You also build your own templating system which allows you to simplify your views and stripping out all PHP code. From example instead of having @<h1><?php echo $user->username; ?></h1>@ or something similar, you will use @<h1>{username}</h1>@. There's a big argument over the use of a templating system in PHP applications and personally I prefer using PHP code instead of some pseudo-template-language, but it's still a great piece of functionality to add into an app and it's handled perfectly.
+
+One surprising addition to the book is Chapter 11, "Developing an API" which guides you through the implementation of an API to allow third parties to access sections of your application just like the one Facebook, Twitter and most other social sites provide. This chapter proved very useful.
+
+The final three chapters, "Deployment, Security and Maintenance", "Marketing, SEO, User Retention and Monetization Strategies" and "Planning for Growth" all provide some great information for running a PHP site. The chapters are quite vague in their actual implementation (which is understandable as you could write an entire book on each topic) but prove to offer a wealth of useful information.
+
+One thing I did find lacking was testing. There's no mention of unit testing which I feel would be useful on an application of this size where it could be quite easy to accidentally break a feature while altering some core files.
+
+Overall, I highly recommend this book for anyone with a small amount of programming experience. You'll learn a variety of good practices which you'll find useful in other web development projects. And hey, if some day people really do have pet dinosaurs, you'll have a ready-made social network for them!
