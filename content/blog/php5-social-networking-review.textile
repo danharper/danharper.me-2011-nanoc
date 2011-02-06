@@ -6,6 +6,7 @@ updated_at: 2011-02-06
 kind: article
 published: true
 //disqus: disable
+excerpt: <p>The guys at Packt Publishing recently emailed me asking if I'd be interested in reviewing their latest book, <a href="https://www.packtpub.com/php-create-powerful-dynamic-social-networking-website/book">PHP 5 Social Networking</a> by Michael Peacock. Of course I jumped at the chance of receiving another free book!</p><p>Click through for the review.</p>
 ---
 The guys at Packt Publishing recently emailed me asking if I'd be interested in reviewing their latest book, "PHP 5 Social Networking":https://www.packtpub.com/php-create-powerful-dynamic-social-networking-website/book by Michael Peacock. Of course I jumped at the chance of receiving another free book!
 
