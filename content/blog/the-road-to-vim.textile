@@ -1,0 +1,47 @@
+Vim's fucking epic! This is my transition from TextMate.
+
+ragtag - inserting html tags (eq. of CTRL+> CTRL+< in TextMate)
+
+	<C-X><Space> (CTRL+X Space) after word, make into tag (| is cursor location)
+		foo|<C-X><Space>  =>  <foo>|</foo>
+	
+	<C-X><CR> (CTRL-X Enter) after word, make into tag with new lines
+		foo|<C-X><CR>  =>  <foo>\n|\n</foo>
+
+	<C-X>/ (CTRL-X /) close last tag
+		<p>Hello there|<C-X>/  =>  <p>Hello there</p>|
+
+	<C-X>= insert ruby erb puts tag
+		foo|<C-X>=  =>  foo<%= | %>
+	
+	<C-X>+ insert ruby erb puts tag around word
+		foo|<C-X>+  =>  <%= foo| %>
+
+	<C-X>- insert ruby erb tags
+		foo<C-X>-  =>  foo<% | %>
+	
+	<C-X>_ insert ruby erb tags around word
+		foo<C-X>_  => <% foo| %>
+
+EnhancedCommentify - smart commenting out
+	<leader>, to comment out line. also works in Visual mode
+	detects language & commenting style automatically
+	supports embedded languages in HTML (eg. CSS, JS, PHP etc.)
+
+NERDTree - file navigator
+
+snipMate - Snippets
+	Tab-trigger snippets, very similar to TextMate
+
+surround - add/change/remove surrounding stuff
+
+sparkup - Write HTML markup faster (zencoding) with <C-E>
+	div#container>header>h1{The title}
+
+Textile - syntax highlighting support & more for textile
+	<leader>rp  =>  Render into HTML & preview in browser
+	<leader>rt  =>  Render into HTML & preview in new tab
+
+i = insert mode
+v = visual mode
+V = visual mode (line style)
