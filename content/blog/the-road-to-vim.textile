@@ -1,3 +1,11 @@
+--- 
+title: The Road to Vim
+created_at: 2011-02-16
+updated_at: 2011-02-16
+kind: article
+published: false
+//excerpt: <p>Sometimes I like to re-create effects I like from other sites. I find this is a great way to learn a new technology or skill. Today, I decided to have a go at creating the big &#147;Welcome to Channel 4&#148; navigation area on the <a href="http://www.channel4.com/">Channel 4 homepage</a> in CSS3.</p>
+---
 Vim's fucking epic! This is my transition from TextMate.
 
 ragtag - inserting html tags (eq. of CTRL+> CTRL+< in TextMate)
