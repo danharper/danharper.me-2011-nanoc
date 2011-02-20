@@ -11,6 +11,12 @@ kind: portfolio
 published: true
 ---
 
-wip
+I was contacted by Ian to build two job advertising sites which would appeal largely to students in the 16-21 age bracket.
+
+Ian found me via a jobs advert script I am selling on the "CodeCanyon marketplace":http://codecanyon.net/item/the-jobs-board/48631?ref=danharper which he was impressed with and wanted custom work done to.
+
+The site was built from scratch using the CodeIgniter PHP framework and was delivered well ahead of the deadline. A wide range of technical processes were employed throughout the development of the site, including user registration, payment processing with PayPal, email support, file uploading and handling, integration with social networking sites (Twitter and Facebook) and RSS feeds.
+
+Some minor degradable jQuery scripting was included to add an extra layer of depth to the sites, and some CSS3 was used to elegantly improve the appearance of the site.
 
 !(full_site_ss)/assets/portfolio/jobs-abroad/summerjobs.jpg!
