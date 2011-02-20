@@ -10,4 +10,6 @@ kind: portfolio
 published: true
 ---
 
-wip
+Computer-Tec wanted a simple, elegant web page to give themselves a presence on the web and to attract local visitors searching online for computer repairs and other related services.
+
+Since launching the new site, visitors increased 300% thanks to a more SEO-approach compared to their previous site.
