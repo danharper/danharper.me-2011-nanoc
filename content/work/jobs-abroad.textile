@@ -19,4 +19,4 @@ The site was built from scratch using the CodeIgniter PHP framework and was deli
 
 Some minor degradable jQuery scripting was included to add an extra layer of depth to the sites, and some CSS3 was used to elegantly improve the appearance of the site.
 
-!(full_site_ss)/assets/portfolio/jobs-abroad/summerjobs.jpg!
+"!(full_site_ss)/assets/portfolio/jobs-abroad/summerjobs.jpg!":http://summerjobs.ie
