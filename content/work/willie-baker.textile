@@ -10,4 +10,9 @@ kind: portfolio
 published: true
 ---
 
-wip
+I was hired by Willie to design, develop and maintain a simple, easily-updateable website for him to provide him an online presence.
+
+* I developed a custom WordPress theme for "the site":http://www.williebaker.co.uk and provided basic training in how to use the WordPress Dashboard to easily update his site
+* Extensive use of PHP, minor jQuery scripting and used latest standards in HTML and CSS
+* Website was required to render correctly in all major browsers, including Internet Explorer 6
+* Took the site went through a minor design re-fresh in January 2010

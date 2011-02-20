@@ -11,4 +11,32 @@ kind: portfolio
 published: true
 ---
 
-wip
+The gp3 WordPress theme is for sale on the "ThemeForest marketplace":http://themeforest.net/item/gamepress-3-gaming-news-reviews/112537?ref=danharper for just $30.
+
+gp3 is a "spiritual successor" to another WordPress theme I'm selling, GamePress. gp3 takes advantage of the latest features avaiable in WordPress 3 to build an elegant Game Portal, linking all news posts, reviews, previews and features to their relevant game. This both makes the site easier to navigate and massively increases the site's search engine potential by linking all related posts into an easily-crawlable structure.
+
+The following is the product description at ThemeForest:
+
+gp3 is the ultimate in gaming themes. GamePress has been re-built from the ground up to take advantage of the exciting new features available in WordPress 3.0 and is sporting a great new clean, modern design with a hint of classic design elements.
+
+h3. Games Portal
+
+You can now link all your news, reviews and previews with the appropriate game and GamePress will create a portal with that game’s details (such as the summary, genre, box art etc.) along with all the news, reviews and previews the game is linked to!
+
+h3. Reviews System
+
+You can write reviews & previews without having to mess about with specific categories, custom-fields etc.
+
+h3. WordPress 3.0 Features
+
+No more messing about with “custom fields” or assigning categories and pages in your options – gp3 is built for WordPress 3.0 and takes advantage of its ‘Featured Image’ uploader, custom taxonomies and post types! What this means is, managing your site won’t feel like you’re “hacking about” with WordPress. *It just works.*
+
+h3. Other Exciting Features
+
+* Featured Slider
+* CSS3 features
+* @font-face fonts
+* WP 3 .0’s Featured post image support
+* WP 3 .0’s Custom menus
+* Custom ‘Latest Reviews’ & ‘Latest Previews’ widgets
+* Threaded comments
