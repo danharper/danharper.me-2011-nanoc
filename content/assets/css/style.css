@@ -1,0 +1,319 @@
+body {
+	background: url(assets/images/bg-large.png) repeat #f6f6f6;
+}
+
+#headerwrap {
+	border-bottom: 1px solid rgba(229,229,299,0.4);
+	margin: 0 0 45px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	background: rgba(244,244,244,0.5);
+	padding: 15px 0;
+}
+
+#headerwrap header {
+	width: 920px;
+	margin: 0 auto;
+}
+
+.alignright {
+	float: right;
+	padding: 5px;
+	/* border: 3px double #ddd; */
+	margin: 0 -90px 10px 10px;
+}
+
+h1 a:link, h1 a:visited {
+	background: url(assets/images/logo.png) no-repeat;
+	float: left;
+	height: 37px;
+	width: 37px;
+}
+
+h2 {
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	font-weight: lighter;
+	color: #302e2e;
+	font-size: 52px;
+	text-align: center;
+	margin: 0 -90px 45px;
+}
+
+h2 a:link, h2 a:visited {
+	color: #302e2e;
+	text-decoration: none;
+}
+
+h2 a:hover, h2 a:focus {
+	/* border-bottom: 1px dashed; */
+}
+
+hgroup h2 {
+	font-family: "Adobe Garamond Pro", serif;
+	font-size: 18px;
+	color: #bbb;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: lowercase;
+	text-align: left;
+	margin: 10px 0 0 20px;
+	float: right;
+}
+
+.js hgroup h2 {	float: left; display: none; }
+
+p, ul {
+	margin-bottom: 30px;
+}
+
+nav {
+	color: #8a8a8a;
+	float: left;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	margin-left: 20px;
+	margin-top: 3px;
+	text-transform: lowercase;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav a:link, nav a:visited {
+	color: #8a8a8a;
+	text-decoration: none;
+}
+
+nav .current a:link, nav .current a:visited {
+	color: #4b4b4b;
+}
+
+nav a:hover, nav a:focus {
+	border-bottom: 1px dotted;
+}
+
+#wrap {
+	font-family: "Adobe Garamond Pro", serif;
+	color: #4c4a4a;
+	font-size: 20px;
+	line-height: 31px;
+	clear: both;
+	margin: 0 auto;
+	width: 740px;
+}
+
+section h2 {
+	/* text-shadow: */
+		/* 1px 1px 0 #fff, */
+		/* 2px 2px 0 #bbb */
+	/* ; */
+}
+
+article {
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	border-bottom: 3px double #ddd;
+}
+
+article:last-of-type, #singlepost {
+	padding-bottom: 0;
+	border: none;
+}
+
+article header {
+	clear: both;
+}
+
+#opensource {
+	margin: 0;
+}
+
+#opensource a:link, #opensource a:visited, #thearchives a:link, #thearchives a:visited {
+	background: #237CCF;
+	color: #fff;
+	display: block;
+	padding: 15px 0;
+	margin: 0 0 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 32px;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-transition: 0.4s background;
+	-moz-transition: 0.4s background;
+	transition: 0.4s background;
+}
+
+#opensource a:hover, #opensource a:focus, #thearchives a:hover, #thearchives a:focus {
+	background: #c91111;
+}
+
+#opensource span {
+	background: url(assets/images/opensource.png) no-repeat center left;
+	padding-left: 50px;
+}
+
+article header p {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	left: 100px;
+	top: 240px;
+	position: absolute;
+	margin: 0;
+	color: #666;
+	opacity: 0.4;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	font-weight: lighter;
+}
+
+.js article header p {
+	display: none;
+}
+
+article > p:first-of-type:first-line {
+	font-variant: small-caps;
+}
+
+/* Drop cap on first paragraph */
+/* article h2 + p:first-letter { */
+	/* font-size: 3em; */
+	/* float: left; */
+	/* margin: 0.35em 0.1em 0.1em 0; */
+/* } */
+
+/* Large first paragraph */
+/* article h2 + p { */
+	/* font-family: sans-serif; */
+	/* font-size: 19px; */
+/* } */
+
+figure {
+	margin: 0 -90px 30px;
+	width: 920px;
+}
+
+figcaption {
+	font-size: 14px;
+	color: #aaa;
+	padding: 0 90px;
+}
+
+code {
+	font-size: 12px;
+	background: #eee;
+	color: #666;
+	padding: 3px;
+	font-family: "M+ 1m", monospace;
+}
+
+#home {
+	background: url(assets/images/bg-large.png) repeat #f6f6f6;
+}
+
+#home section {
+	width: 631px;
+	margin: 90px auto;
+}
+
+#home h1 {
+	width: 210px;
+	height: 210px;
+	background: url(assets/images/logo-large.png) no-repeat;
+	float: right;
+}
+
+#home nav {
+	width: 420px;
+	float: left;
+	margin: 0;
+}
+
+#home li {
+	margin: 0;
+}
+
+#home li a:link, #home li a:visited {
+	width: 400px;
+	font-family: "Yanone Kaffeesatz", serif;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 49px;
+	line-height: 70px;
+	border: none;
+	height: 69px;
+	background: #c91111;
+	display: block;
+	color: #f0f0f0;
+	padding: 0 0 0 20px;
+	margin: 0 0 1px;
+}
+
+#home li a:hover, #home li a:focus {
+	background: -moz-linear-gradient(top, #e21919, #b00909);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e21919),color-stop(1, #b00909));
+	background: -webkit-gradient(top, #e21919, #b00909);
+	background: linear-gradient(top, #e21919, #b00909);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e21919', EndColorStr='#b00909');
+}
+
+#home li:last-child a:link, #home li:last-child a:visited {
+	margin: 0;
+	height: 70px;
+}
+
+footer {
+	color: #b2b2b2;
+	font-family: "M+ 1m", sans-serif;
+	font-size: 13px;
+	clear: both;
+	text-align: center;
+	padding-top: 25px;
+}
+
+footer a:link, footer a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+	border-bottom: 1px dotted;
+}
+
+small {
+	display: block;
+	margin-top: 7px;
+	color: #c9c9c9;
+	font-size: 12px;
+}
+
+/* #aboutme h2 { */
+	/* background: url(assets/images/about-me.png) no-repeat; */
+	/* text-indent: -9999em; */
+	/* width: 368px; */
+	/* height: 132px; */
+/* } */
+
+#aboutme h2 {
+	text-align: left;
+	margin-left: 0;
+}
+
+#aboutme figure {
+	float: right;
+	display: block;
+	width: auto;
+	margin: -90px -40px 5px 10px;
+}
