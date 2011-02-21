@@ -2,9 +2,7 @@
 title: Creative.Industry
 ext: themeforest
 url: http://themeforest.net/item/creativeindustry/23742?ref=danharper
-images: creative-industry
-large: main.jpg
-thumb: thumb.jpg
+portfolio: creative-industry.jpg
 created_at: 2008-12-12
 updated_at: 2010-12-30
 kind: portfolio

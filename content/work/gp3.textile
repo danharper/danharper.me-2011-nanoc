@@ -2,9 +2,7 @@
 title: gp3
 ext: themeforest
 url: http://themeforest.net/item/gamepress-3-gaming-news-reviews/112537?ref=danharper
-images: gp3
-large: main.jpg
-thumb: thumb.jpg
+portfolio: gp3.jpg
 created_at: 2010-07-09
 updated_at: 2010-12-30
 kind: portfolio

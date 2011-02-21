@@ -1,9 +1,7 @@
 --- 
 title: Willie Baker Leadership & Development
 url: http://www.williebaker.co.uk
-images: willie-baker
-large: main.jpg
-thumb: thumb.jpg
+portfolio: willie-baker.jpg
 created_at: 2010-02-01
 updated_at: 2010-12-30
 kind: portfolio

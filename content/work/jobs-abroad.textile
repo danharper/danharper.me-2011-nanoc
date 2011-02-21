@@ -2,9 +2,7 @@
 title: JobsAbroad.ie & SummerJobs.ie
 ext: client
 url: http://www.jobsabroad.ie
-images: jobs-abroad
-large: main.jpg
-thumb: thumb.jpg
+portfolio: jobs-abroad.jpg
 created_at: 2010-08-14
 updated_at: 2010-12-30
 kind: portfolio
