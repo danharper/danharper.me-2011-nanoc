@@ -2,17 +2,18 @@
 title: My Portfolio
 ---
 
-<p class="message">
-	<a href="http://github.com/danharper"><span>You can view my open-source projects at GitHub</span></a>
-</p>
 
 <section id="portfolio">
+	<p id="opensource">
+		<a href="https://github.com/danharper"><span>You can view my open-source projects at GitHub</span></a>
+	</p>
 	
 	<% sorted_portfolio_items.each do |i| %>
 		<article>
-			<a href="<%= relative_path_to i %>" title="View '<%= i[:title] %>'">
-				<img src="/assets/portfolio/<%= i[:images] %>/<%= i[:large] %>" alt="<%= i[:title] %> preview" />
-			</a>
+			<p><a href="<%= relative_path_to i %>" title="View '<%= i[:title] %>'">
+				<img src="/assets/portfolio/<%= i[:portfolio] %>" alt="Screenshot of the '<%= i[:title] %>' project" width="740">
+			</a></p>
 		</article>
 	<% end %>
+	
 </section>
