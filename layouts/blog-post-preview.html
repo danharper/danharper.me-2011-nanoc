@@ -1,33 +1,23 @@
 <article>
 	<% if i[:external] %>
-	
-		<h1 class="<%= i[:external] %>"><%= link_to i[:title], i[:external_url] %></h1>
-		<% if i[:postimg] %>
-			<p class="postimg">
-				<img src="/assets/postimg/ext/<%= i[:postimg] %>" />
-			</p>
-		<% end %>
-		<div><%= i.compiled_content %></div>
-		<p class="stylish clearfix">
-			<%= link_to "Continue Reading", i[:external_url] %>
-		</p>
 		
+		<h2 class="<%= i[:external] %>"><%= link_to i[:title], i[:external_url] %></h2>
+		<% if i[:postimg] %>
+			<p><img src="/assets/postimg/ext/<%= i[:postimg] %>" alt="" class="alignright"></p>
+		<% end %>
+		<%= i.compiled_content %>
+	
 	<% else %>
 	
-		<h1><%= link_to i[:title], i %></h1>
+		<h2><%= link_to i[:title], i %></h2>
 		<% if i[:postimg] %>
-			<p class="postimg">
-				<img src="/assets/postimg/<%= i[:postimg] %>" />
-			</p>
+			<p><img src="/assets/postimg/<%= i[:postimg] %>" alt="" class="alignright"></p>
 		<% end %>
 		<% if i[:excerpt] %>
-			<div><%= i[:excerpt] %></div>
-			<p class="stylish clearfix">
-				<%= link_to "Continue Reading", i %>
-			</p>
+			<%= i[:excerpt] %>
 		<% else %>
-			<div><%= i.compiled_content %></div>
+			<%= i.compiled_content %>
 		<% end %>
-		
+	
 	<% end %>
 </article>

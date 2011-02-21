@@ -1,14 +1,12 @@
 <section id="blog">
-	<article>
-		<h1><%= @item[:title] %></h1>
+	<article id="singlepost">
+		<header>
+			<h2><%= @item[:title] %></h2>
+			<p><%= @item[:created_at].strftime('%B %d, %Y') if @item[:created_at] %></p>
+		</header>
 		<% if @item[:postimg] %>
-			<p class="postimg">
-				<img src="/assets/postimg/<%= @item[:postimg] %>" />
-			</p>
+			<p><img src="/assets/postimg/<%= @item[:postimg] %>" alt="" class="alignright"></p>
 		<% end %>
 		<%= yield %>
-<!--		<p class="meta">
-			posted <%= @item[:created_at].strftime('%B %d, %Y') if @item[:created_at] %>.
-		</p>-->
 	</article>
 </section>
