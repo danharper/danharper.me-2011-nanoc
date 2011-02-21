@@ -25,14 +25,13 @@ route '/blog/feed/' do
 end
 
 
-compile '/dribbble/' do
-	filter :redcloth
-	layout 'blog-post'
+compile '/about/' do
+	filter :erb
+	layout 'about'
 	layout 'default'
 end
 
 compile '/assets/css/style/' do
-	filter :less
 	filter :rainpress
 end
 
@@ -41,7 +40,7 @@ route '/assets/css/style/' do
 end
 
 route '/assets/css/reset/' do
-	nil
+	'/reset.css'
 end
 
 
@@ -64,6 +63,12 @@ compile '/work/*/' do
 	filter :redcloth
 	layout 'portfolio-item'
 	layout 'default'
+end
+
+
+compile '/' do
+	filter :erb
+	layout 'home'
 end
 
 
