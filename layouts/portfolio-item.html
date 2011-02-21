@@ -1,9 +1,7 @@
 <section id="portfolio">
 	<article>
-		<% ext = (@item[:ext]) ? @item[:ext] : "client" %>
-		<% ext = " class=\"#{ext}\"" %>
-		<h1<%= ext %>><%= @item[:title] %></h1>
-		<p><a href="<%= @item[:url] %>"><img src="/assets/portfolio/<%= @item[:images] %>/<%= @item[:large] %>" alt="<%= @item[:title] %> preview" /></a></p>
+		<h2><%= @item[:title] %></h2>
+		<p><a href="<%= @item[:url] %>"><img src="/assets/portfolio/<%= @item[:portfolio] %>" alt="Screenshot of the '<%= @item[:title] %>' project" width="740"></a></p>
 		<%= yield %>
 	</article>
 </section>
