@@ -12,7 +12,7 @@ $(function() {
 	homeh1 = $("#home h1");
 
 	// Change class on html tag from 'no-js' to 'js'
-	html.className = html.className.replace(/\bno-js\b/,'') + 'js';
+	html.className = html.className.replace(/\bno-js\b/,'js');
 
 	// Show slogan when hover on logo
 	$(logo).hover(
