@@ -7,6 +7,9 @@ created_at: 2008-12-12
 updated_at: 2010-12-30
 kind: portfolio
 published: true
+excerpt: <p>Creative.Industry is a WordPress template I am selling on the ThemeForest marketplace.</p>
 ---
+
+Creative.Industry is a WordPress template I am selling on the ThemeForest marketplace.
 
 wip

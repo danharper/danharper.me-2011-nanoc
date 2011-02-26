@@ -376,3 +376,52 @@ pre code {
 	margin-bottom: 10px;
 	margin-left: 0;
 }
+
+
+/* New work page */
+#portfolio .details {
+	width: 420px;
+	float: left;
+	margin: 0 0 0 -90px;
+}
+
+#portfolio figure {
+	width: 480px;
+	margin: 0 -90px 0 0;
+	float: right;
+	overflow: hidden;
+}
+
+#portfolio h2 {
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 42px;
+	border-bottom: 1px double #dfdfdf;
+	padding: 0 0 20px;
+}
+
+#portfolio .details ul {
+	font-size: 15px;
+	line-height: 15px;
+	margin: 0 0 15px;
+	padding: 0 10px 5px;
+	border-bottom: 3px double #dfdfdf;
+}
+
+#portfolio .details li {
+	display: inline;
+	color: #888;
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid #dfdfdf;
+}
+
+#portfolio .details li:last-child {
+	border: none;
+}
+
+#portfolio .details p {
+	font-size: 18px;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+}

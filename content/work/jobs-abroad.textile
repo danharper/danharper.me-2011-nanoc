@@ -7,6 +7,7 @@ created_at: 2010-08-14
 updated_at: 2010-12-30
 kind: portfolio
 published: true
+excerpt: <p>The site was built from scratch using the CodeIgniter PHP framework and was delivered well ahead of the deadline. A wide range of technical processes were employed throughout the development of the site, including user registration, payment processing with PayPal, email support, file uploading and handling, integration with social networking sites (Twitter and Facebook) and RSS feeds.</p>
 ---
 
 I was contacted by Ian to build two job advertising sites which would appeal largely to students in the 16-21 age bracket.

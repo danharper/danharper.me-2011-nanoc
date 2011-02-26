@@ -7,6 +7,9 @@ created_at: 2008-12-23
 updated_at: 2010-12-30
 kind: portfolio
 published: true
+excerpt: <p>GamePress is a WordPress template I am selling on the ThemeForest marketplace.</p>
 ---
+
+GamePress is a WordPress template I am selling on the ThemeForest marketplace.
 
 wip

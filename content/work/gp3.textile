@@ -7,6 +7,7 @@ created_at: 2010-07-09
 updated_at: 2010-12-30
 kind: portfolio
 published: true
+excerpt: <p>The gp3 WordPress theme is for sale on the <a href="http://themeforest.net/item/gamepress-3-gaming-news-reviews/112537?ref=danharper">ThemeForest marketplace</a> for just $30.</p> <p>gp3 is a "spiritual successor" to another WordPress theme I'm selling, GamePress. gp3 takes advantage of the latest features avaiable in WordPress 3 to build an elegant Game Portal, linking all news posts, reviews, previews and features to their relevant game. This both makes the site easier to navigate and massively increases the site's search engine potential by linking all related posts into an easily-crawlable structure.</p>
 ---
 
 The gp3 WordPress theme is for sale on the "ThemeForest marketplace":http://themeforest.net/item/gamepress-3-gaming-news-reviews/112537?ref=danharper for just $30.

@@ -6,6 +6,7 @@ created_at: 2010-11-29
 updated_at: 2010-12-30
 kind: portfolio
 published: true
+excerpt: <p>Computer-Tec wanted a simple, elegant web page to give themselves a presence on the web and to attract local visitors searching online for computer repairs and other related services.</p>
 ---
 
 Computer-Tec wanted a simple, elegant web page to give themselves a presence on the web and to attract local visitors searching online for computer repairs and other related services.

@@ -9,10 +9,21 @@ title: My Portfolio
 	</p>
 	
 	<% sorted_portfolio_items.each do |i| %>
-		<article>
-			<p><a href="<%= relative_path_to i %>" title="View '<%= i[:title] %>'">
-				<img src="/assets/portfolio/<%= i[:portfolio] %>" alt="Screenshot of the '<%= i[:title] %>' project" width="740">
-			</a></p>
+		<article class="clearfix">
+			<div class="details">
+				<h2><a href="<%= relative_path_to i %>"><%= i[:title] %></a></h2>
+				<ul>
+					<li>Design</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>PHP</li>
+					<li>MySQL</li>
+					<li>SEO</li>
+				</ul>
+				<%= i[:excerpt] %>
+				<p><a href="<%= relative_path_to i %>">Read More &raquo;</a></p>
+			</div>
+			<figure><a href="<%= relative_path_to i %>"><img src="/assets/portfolio/<%= i[:portfolio] %>" alt="Screenshot of the '<%= i[:title] %>' project" width="480"></a></figure>
 		</article>
 	<% end %>
 	
