@@ -1,0 +1,12 @@
+--- 
+title: Singing with Sinatra - The Basics
+external: tutsplus
+external_url: http://net.tutsplus.com/tutorials/ruby/singing-with-sinatra/
+postimg: nt-singing-sinatra.jpg
+created_at: 2011-03-17
+updated_at: 2011-03-17
+kind: article
+published: true
+---
+
+This is part one of three of "Singing with Sinatra". In this mini-series we'll be taking a look at Sinatra; a small, yet incredibly powerful DSL for quickly creating Ruby web applications. In this part, we'll get started with Sinatra by playing around with a few routes, learning how to access URL parameters and how to POST data between pages.
